@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Capacity of 3D Scale Free Wireless Network]]></title>
+    <url>%2F2018%2F09%2F10%2FCapacity-of-3D-Scale-Free-Wireless-Network%2F</url>
+    <content type="text"><![CDATA[还记得大四做毕设的时候，看完了20多篇文献。想着这个二维的栅格模型扩展到三维难道不是很容易吗。一个呆在寝室的下午，坐在桌前，面对着一个魔方，想了一会之后豁然开朗。就有了这个 veeery tiny 的小idea。Poster版面也是亲手设计的，这个小文章真的算是亲儿子了。]]></content>
+      <categories>
+        <category>小硕</category>
+      </categories>
+      <tags>
+        <tag>复杂网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Counting inversions（逆序对计数问题）]]></title>
+    <url>%2F2018%2F07%2F26%2FCounting%20inversions%EF%BC%88%E9%80%86%E5%BA%8F%E5%AF%B9%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[本文参考淡然坊,evasean的blog 首先想到的是，在插入排序中逆序对的个数就是元素交换的次数。这种特性存在于稳定的排序算法中（归并，冒泡，插入），非稳定的（选择）不适用。 归并中的计算，逆序对的数量由3个部分组成：逆序对数量=左半部分的逆序对数量+右半部分的逆序对数量+合并部分的逆序对数量。 令i作为左半数组的遍历索引，j作为右半数组的遍历索引。在合并的任何时刻，一旦发现a[i] 比 a[j] 大，那么会有 (mid – i + 1) 个逆序对。因为a[i+1], a[i+2] … a[mid-1] 都比a[j] 大。 那么最后在merge中加入相应的计数即可。]]></content>
+      <categories>
+        <category>普林斯顿算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>逆序对计数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《用泊松过程生成空间点的程序》]]></title>
+    <url>%2F2018%2F07%2F25%2F%E3%80%8A%E7%94%A8%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B%E7%94%9F%E6%88%90%E7%A9%BA%E9%97%B4%E7%82%B9%E7%9A%84%E7%A8%8B%E5%BA%8F%E3%80%8B%2F</url>
+    <content type="text"><![CDATA[本文翻译自利兹大学采矿与矿物工程系《用泊松过程生成空间点的程序》，涉及到齐次泊松过程、非齐次泊松过程和泊松簇过程几章的部分内容，仅供参考。部分公式导入有问题，直接上图。 其中例子多应用于地质分析，对其他分析也有一定帮助。 POSISSON用泊松过程生成空间点的程序利兹大学采矿与矿物工程系 2002年9月 介绍 齐次泊松过程 非齐次泊松过程 泊松簇过程 1、介绍该程序的目的是实现在空间中利用用户定义的泊松过程生成空间点。程序实现的过程类型有：齐次泊松过程，非齐次泊松过程，泊松聚类过程，简单的Cox过程和简单的布尔模型。 实现是在一个矩形区域中构造的A=[x1,x2]*[y1,y2] 其中x1,x2和y1,y2可以被指定。 被划分为方形单元格，每个单元格被视为一个全有界的Borel集合。和中的单元格的数量也可以由程序的用户指定。对于这种安排，所有的细胞是不相交的，因此每个细胞的泊松点的模拟可以独立完成。 要使用的命令全部列在“SpatialPattern”的主菜单下。 选择相应的命令将弹出相关的参数指定窗口。 关闭窗口将激活模拟，一旦过程结束，将显示生成的点。 2、齐次泊松过程 3、非齐次泊松过程 4、泊松簇过程泊松聚类过程为建模具有聚合特征的空间点模式或空间聚类提供了一种工具。 在实践中，它也经常被称为父女建模，或者是层次模型，在这种情况下，父女之间的关系可以有多代，例如Lee和Einstein提到的那一个[3]。泊松聚类过程实际上由两个独立的过程组成，父过程和下一个过程。最后一点的模式通常只由后代（子过程）组成，尽管在某些特殊情况下父过程被包括在内以避免子代大小为0的集群[1]。 泊松聚类过程的实现将具有以下三个特点：父事件是从泊松过程生成的。 该过程可以是均匀密度λ的齐次泊松过程，密度函数λ（X）的非齐次泊松过程，双随机（Cox）泊松过程，或者甚至是另一种情况下的多代亲子模型 正在建设中。 在泊松聚类建模中，这被称为父流程，它为任何后续的子流程奠定了基础，这是以下两个定义的组合。 在这个步骤中获得了N个父母。 许多有趣的泊松聚类过程可以通过最后两个属性的变化来创建。一些已知的过程包括Neyman-Scott聚类过程，该过程用于描述子点独立且分布相同的聚类过程以及Matérn聚类过程，其中父过程是均匀的泊松过程，每个父过程产生产生的后代的泊松数具有相同的分布均值，参见van Lieshout [8]。 对于子过程点位置分布，文献中常见的模式是以母点为中心的半径r内的一个球（3D）或一个圆（二维）内的子点均匀分布，或由给定的PDF 决定。通常假设各向同性分布，即使有一些优先各向异性方向的分布也被提出。 为了生成泊松聚类过程的实现，需要首先生成父过程。 如上所述，父进程可以是同构的或非同类的进程，或者如果对层次结构进行建模，它甚至可以是集群进程本身。 一旦父过程的模型准备好了，就可以继续产生子过程了。图8显示了在实现女儿的程序中实现的选项。 对于每个亲本的后代数量，有三种选择：可以设置为固定数量，可以从指定的均匀分布生成，或者可以从定义的泊松分布生成（因此定义Metérn过程）。 为了将子过程点分配给他们的父过程，实施了两类分配：在椭圆内均匀分布或根据指定的PDF函数分配。对于每个类别，可以指定一个优先分配方向的进一步选项，详细说明见图6和图7。 每个父母的分布椭圆可以固定其轴和主轴方位角，或者这些属性可以根据指定的分布随机地为每个父过程生成。对于裂缝模拟，更可能是后一种情况，因为母体裂缝可能有不同的大小和方位，直接决定了分布椭圆的属性。如果女儿的位置是按照一个已知的模型分配的，那么模型只需要输入到选项3（图8）给出的数据框中。例如，对于径向对称的正常PDF： 图6 传统的父-子过程分配模式 图7 子裂缝位置分布的特殊考虑 图9 当子过程点均匀地分布在以父母为中心的椭圆内（父母是一个密度λ= 10的均匀泊松过程的实现），Poisson簇过程的一些实现。 图10 根据指定的普通PDF模型分配子过程的Poisson簇过程的一些实现（父母是密度λ= 10的均匀泊松过程的一个实现）]]></content>
+      <categories>
+        <category>小硕</category>
+      </categories>
+      <tags>
+        <tag>泊松点过程（PPP）</tag>
+        <tag>泊松簇过程（PCP）</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[start]]></title>
+    <url>%2F2018%2F07%2F22%2Fstart%2F</url>
+    <content type="text"><![CDATA[Start Hexo]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F07%2F22%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
