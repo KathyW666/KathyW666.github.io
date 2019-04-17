@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="移动端适配,">
 
 
 
@@ -86,14 +86,20 @@
 
 
 
+<meta name="description" content="移动端适配1. 利用百分比实现宽高比固定想实现宽度自适应，高度随宽度变化而变化，宽高比固定。用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。 所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，">
+<meta name="keywords" content="移动端适配">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端适配">
 <meta property="og:url" content="http://KathyW666.github.io/2019/04/17/移动端适配/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
+<meta property="og:description" content="移动端适配1. 利用百分比实现宽高比固定想实现宽度自适应，高度随宽度变化而变化，宽高比固定。用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。 所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-17T10:51:16.905Z">
+<meta property="og:image" content="http://www.w3cplus.com/sites/default/files/blogs/201212/retina-web-10.jpg">
+<meta property="og:updated_time" content="2019-04-17T10:56:22.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端适配">
+<meta name="twitter:description" content="移动端适配1. 利用百分比实现宽高比固定想实现宽度自适应，高度随宽度变化而变化，宽高比固定。用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。 所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，">
+<meta name="twitter:image" content="http://www.w3cplus.com/sites/default/files/blogs/201212/retina-web-10.jpg">
 
 
 
@@ -345,6 +351,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/FE/" itemprop="url" rel="index">
+                    <span itemprop="name">FE</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -372,7 +400,27 @@
       
 
       
-        
+        <h2 id="移动端适配"><a href="#移动端适配" class="headerlink" title="移动端适配"></a>移动端适配</h2><h5 id="1-利用百分比实现宽高比固定"><a href="#1-利用百分比实现宽高比固定" class="headerlink" title="1. 利用百分比实现宽高比固定"></a>1. 利用百分比实现宽高比固定</h5><p>想实现宽度自适应，高度随宽度变化而变化，宽高比固定。<br>用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。</p>
+<p>所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，以实现固定宽高比。</p>
+<p>还可以利用vw，vh设置</p>
+<h5 id="2-rem"><a href="#2-rem" class="headerlink" title="2. rem"></a>2. rem</h5><p>以<html>元素字体为基准的单位：默认font-size为16px的话，1rem=16px。<br>可以根据 .clientWidth 读取屏幕宽度，并计算对应的尺寸。</html></p>
+<h5 id="3-怎样适应视网膜分辨率？"><a href="#3-怎样适应视网膜分辨率？" class="headerlink" title="3. 怎样适应视网膜分辨率？"></a>3. 怎样适应视网膜分辨率？</h5><p><img src="http://www.w3cplus.com/sites/default/files/blogs/201212/retina-web-10.jpg" alt="怎样适应视网膜分辨率"></p>
+<h5 id="4-dpr-和-viewport"><a href="#4-dpr-和-viewport" class="headerlink" title="4. dpr 和 viewport"></a>4. dpr 和 viewport</h5><p>dpr(device pixel ratio)设备像素比<br>viewport 移动端有三:</p>
+<ul>
+<li>ideal viewport 理想大小，通常设为设备屏宽高</li>
+<li>visual viewport 可视大小，整个page在屏幕中显示的大小, 不会超过layout</li>
+<li>layout viewport 布局大小，page页面的大小</li>
+</ul>
+<p>通常页面不会完全显示，因此 visual viewport &lt;= layout viewport,</p>
+<h5 id="5-关于flexible方案"><a href="#5-关于flexible方案" class="headerlink" title="5. 关于flexible方案"></a>5. 关于flexible方案</h5><ul>
+<li>如果 <meta> 标签中设定了viewport，则取值已设定的 初始dpr 和 ideal viewport 的宽度大小（通常=device-width设备宽度）</li>
+<li>若没有<meta>, 根据设备设置 dpr 和 缩放倍数（1/dpr）,压缩css像素，保证同等物理大小的范围里，css像素和物理像素比为1.</li>
+<li>添加<meta>属性及标签</li>
+<li>监听页面变化</li>
+<li>更新根元素字体大小：这里如果页面宽度低于540px,那么页面中html的font-size也会按照（当前页面宽度/640）的比例变化</li>
+</ul>
+<p>initial-dpr 的作用方式是：同时设置 visual viewport 和 layout viewport，如果width属性也有设定，则取二者较大值</p>
+
       
     </div>
     
@@ -404,6 +452,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/移动端适配/" rel="tag"># 移动端适配</a>
+          
+        </div>
       
 
       
@@ -512,8 +566,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -541,7 +604,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -552,7 +615,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -611,6 +674,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端适配"><span class="nav-number">1.</span> <span class="nav-text">移动端适配</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-利用百分比实现宽高比固定"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1. 利用百分比实现宽高比固定</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-rem"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2. rem</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-怎样适应视网膜分辨率？"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3. 怎样适应视网膜分辨率？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-dpr-和-viewport"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4. dpr 和 viewport</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-关于flexible方案"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5. 关于flexible方案</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
