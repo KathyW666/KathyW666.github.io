@@ -96,7 +96,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://kathyw666.github.io/2019/04/27/纯css实现选项卡/checked.gif">
 <meta property="og:image" content="http://kathyw666.github.io/2019/04/27/纯css实现选项卡/target.gif">
-<meta property="og:updated_time" content="2019-05-06T03:08:44.458Z">
+<meta property="og:updated_time" content="2019-05-09T07:57:33.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯css实现选项卡">
 <meta name="twitter:description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等  布局  float 肯定是可以实现的，absolute+float:left+li，将列表横向布局实现。 如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空div">
@@ -406,9 +406,10 @@
 <ol>
 <li>布局</li>
 </ol>
-<p>float 肯定是可以实现的，<code>absolute</code>+<code>float:left</code>+<code>li</code>，将列表横向布局实现。</p>
+<p><code>float</code> 肯定是可以实现的，<code>absolute</code>+<code>float:left</code>+<code>li</code>，将列表横向布局实现。</p>
 <p>如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空<code>div</code>清除浮动；“现代”方法用<code>::after</code>伪元素也分分钟解决，注意要设置伪元素为块级元素<code>block</code>才能出现效果，加上<code>clear:both</code></p>
 <p>接下来可能会引申到两端对齐 还可以用<code>inline-block</code>+<code>text-align: justify</code> 实现两端对齐，不过其默认对最后一行无效，新浏览器可配合<code>text-align-last: justify</code>使用。面对兼容问题一样可以使用添加空<code>div</code>或者伪元素，设置<code>display: inline-block</code>，并设置宽度为 100%</p>
+<p>另外也可以 <code>flex</code> ，操作更加容易一些</p>
 <ol start="2">
 <li>切换</li>
 </ol>
@@ -477,6 +478,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/08/CSS3-flex布局/dice-demo/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -593,7 +598,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

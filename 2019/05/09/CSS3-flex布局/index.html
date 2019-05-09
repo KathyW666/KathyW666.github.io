@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="css,">
 
 
 
@@ -86,13 +86,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kathy&#39;s Blog">
-<meta property="og:url" content="http://KathyW666.github.io/archives/2018/07/index.html">
+<meta name="description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3 flex布局">
+<meta property="og:url" content="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
+<meta property="og:description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png">
+<meta property="og:image" content="http://kathyw666.github.io/2019/05/09/CSS3-flex布局/dice.png">
+<meta property="og:updated_time" content="2019-05-09T08:12:12.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kathy&#39;s Blog">
+<meta name="twitter:title" content="CSS3 flex布局">
+<meta name="twitter:description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
+<meta name="twitter:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png">
 
 
 
@@ -122,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://KathyW666.github.io/archives/2018/07/">
+  <link rel="canonical" href="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/">
 
 
 
 
 
-  <title>Archive | Kathy's Blog</title>
+  <title>CSS3 flex布局 | Kathy's Blog</title>
   
 
 
@@ -147,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/KathyW666" class="github-corner" aria-label="View source on Github">
       <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -290,177 +299,298 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kathy Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kathy's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h2 class="post-title" itemprop="name headline">CSS3 flex布局</h2>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-09T15:55:52+08:00">
+                2019-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 14 posts in total. Keep on posting.
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/FE/" itemprop="url" rel="index">
+                    <span itemprop="name">FE</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2018">2018</h2>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/26/Counting inversions（逆序对计数问题）/" itemprop="url">
-              
-                <span itemprop="name">Counting inversions（逆序对计数问题）</span>
-              
-            </a>
-        
-      </h3>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-07-26T16:05:31+08:00" content="2018-07-26">
-          07-26
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/25/《用泊松过程生成空间点的程序》/" itemprop="url">
-              
-                <span itemprop="name">《用泊松过程生成空间点的程序》</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-07-25T11:26:22+08:00" content="2018-07-25">
-          07-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/22/start/" itemprop="url">
-              
-                <span itemprop="name">start</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-07-22T23:23:37+08:00" content="2018-07-22">
-          07-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h4 id="是什么？"><a href="#是什么？" class="headerlink" title="是什么？"></a>是什么？</h4><p>自适应弹性布局</p>
+<ul>
+<li>自动判断布局空间，修改自身尺寸</li>
+<li>多个 box 在多个方向进行对齐&amp;分布</li>
+</ul>
+<h4 id="什么时候用？适用于什么场景？"><a href="#什么时候用？适用于什么场景？" class="headerlink" title="什么时候用？适用于什么场景？"></a>什么时候用？适用于什么场景？</h4><ul>
+<li>布局内部需要自适应</li>
+<li>布局内部需要多个方向排列对齐</li>
+</ul>
+<p>应用于：</p>
+<ul>
+<li>移动端适配，移动端开发</li>
+<li>APP 组件，页面栏目 or 小范围板块布局</li>
+</ul>
+<h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
+<li><p>布局结构</p>
+<p>双层结构：外层容器<code>flex-container</code>,激活弹性机制。<br>内层<code>flex-item</code>自动获得相关特性。<br><code>flex-container</code>外部和<code>flex-item</code>内部元素不受影响。</p>
+</li>
+<li><p>flex 机制</p>
+<p>任何一个容器都可以指定为 flex 布局，其内部第一层级的子项自动变为 flex 项目</p>
+<pre><code>`display:flex` 块状flex容器
+`display:inline-flex`行间flex容器
+</code></pre><p><strong>一旦激活 flex 机制，子项的<font color="darkpink"><code>float</code></font>、<font color="darkpink"><code>clear</code></font> 和 <font color="darkpink"><code>vertical-align</code></font> 属性失效</strong></p>
+</li>
+<li><p>区域轴向</p>
+<p>主轴 &amp; 交叉轴，flex 容器的两端为轴的起点和终点</p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt="from:阮一峰-flex布局"></p>
+</li>
+</ul>
+<h4 id="flex-属性"><a href="#flex-属性" class="headerlink" title="flex 属性"></a>flex 属性</h4><p><code>flex-container</code>6 个属性，<code>flex-item</code>6 个属性</p>
+<ul>
+<li><p>外围容器相关属性：对子项的排列和对齐 - <code>flex-direction</code>：定义主轴和交叉轴的方向，文档流入盒子的方向 - <code>flex-wrap</code>：换行 <code>nowrap</code>：往往对应自适应，外围容器固定，item 自动变化 - <code>flex-flow</code>：文档流 <code>flex-direction</code> + <code>flex-wrap</code> 缩写 - <code>justify-content</code>：主轴对齐（左中右，留白环绕，留白中间） - <code>align-items</code>：交叉轴对齐 - <code>align-content</code>：交叉轴多行的对齐方式（容器若只有一行，则无效，避免与<code>align-items</code>发生冲突）</p>
+<p>那么问题来了：水平垂直居中的一个方式，就可以用<font color="darkpink"><strong><code>flex布局</code></strong></font>实现</p>
+</li>
+<li><p>子项相关属性：子项的自适应伸缩及分配</p>
+<ul>
+<li><code>flex-grow</code>：扩展比例，分配的是剩余的空间（wrap），默认 0 不扩展</li>
+<li><code>flex-shrink</code>：收缩比例（nowrap)，默认 1 等比收缩</li>
+<li><code>flex-basis</code>：定义 item 在主轴上的基本尺寸(定义子项的基本宽 or 高)，默认 auto</li>
+<li><code>flex</code>缩写 固定顺序（grow shrink basis）可省略。<code>none</code> <code>auto</code>（可扩展可收缩）</li>
+</ul>
+<p>快捷写法：只写 grow shrink，默认忽略设定的<code>width</code>；只写 basis 默认可扩展可收缩。尽量使用 flex 复合写法。</p>
+<ul>
+<li><code>align-self</code>：子项自身的交叉轴对齐方式</li>
+<li><code>order</code>：子项的排列顺序，数值越小越靠前，可以负数</li>
+</ul>
+<p>以上两个属于单独调整的两个属性</p>
+<p><img src="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png" alt="flex属性"></p>
+</li>
+</ul>
+<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><ul>
+<li>什么时候想到用 flex - 移动端 - 单、多行垂直居中 - 需要垂直对齐的列表元素 - 单行选项卡 - 垂直弹性布局 - <strong>分栏，一些栏定宽+其他栏自适应</strong></li>
+</ul>
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><ul>
+<li><p>骰子 🎲（练习对齐）👉<a href="CSS3-flex布局/dice-demo.html">code</a></p>
+<p><img src="/2019/05/09/CSS3-flex布局/dice.png" alt="dice"></p>
+</li>
+<li><p>一栏定宽 + 一栏自适应 👉<a href="CSS3-flex布局/flex-demo.html">code</a></p>
+</li>
+<li>tab 选项卡 👉<a href="CSS3-flex布局/flex-tab-demo.html">code</a></li>
+<li><p>垂直弹性布局：👉<a href="CSS3-flex布局/flex-vertical-demo.html">code</a></p>
+<p>另一种方法：header footer position 固定位置<br>注意对 <code>overflow</code> 和 <font color="darkpink"><code>超出视口</code></font>部分滚动的设置</p>
+</li>
+</ul>
+<h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ul>
+<li>简写 flex 属性，导致设定宽高无效</li>
+<li>flex 容器中的文本自动成为 flex 子项，除了空格</li>
+<li>子项的 float、clear 和 vertical-align 属性失效</li>
+<li>如果子项是绝对定位，定位基准参考 flex 容器的<strong><code>content</code></strong>盒子。因为 flex 本身就是对其 content 的文档流进行操作</li>
+<li>flex 子项的 margin：外边距合并失效，margin：auto 可自动分配剩余空间，达到垂直居中的效果，类似操作 flex 容器的主轴交叉轴对齐</li>
+<li>flex 容器主轴和 writing-mode：一旦独立设定 writing-mode，优先级高于 flex 容器轴向操作，子项内的文字也会随<br>writing-mode 改变</li>
+</ul>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><a href="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" target="_blank" rel="noopener">阮一峰-flex 布局</a></p>
+<p><a href="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png" target="_blank" rel="noopener">zhangwang-flex 属性</a></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/22/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-07-22T17:02:58+08:00" content="2018-07-22">
-          07-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Kathy Wang
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/" title="CSS3 flex布局">http://KathyW666.github.io/2019/05/09/CSS3-flex布局/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/09/CSS3-flex布局/flex-vertical-demo/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -468,6 +598,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -488,8 +622,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -587,6 +730,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex-布局"><span class="nav-number">1.</span> <span class="nav-text">flex 布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#是什么？"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么时候用？适用于什么场景？"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">什么时候用？适用于什么场景？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础概念"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">基础概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flex-属性"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">flex 属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实例"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见问题"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考资料"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -734,6 +893,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
