@@ -1,57 +1,92 @@
 <!DOCTYPE html>
-<html lang="">
-<head>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.8.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="Kathy's Blog" type="application/atom+xml">
-
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
-    },
-    sidebarPadding: 40
-  };
-</script>
 
-  <meta property="og:type" content="website">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="Kathy&#39;s Blog">
 <meta property="og:url" content="http://KathyW666.github.io/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
@@ -59,19 +94,39 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kathy&#39;s Blog">
 
-<link rel="canonical" href="http://KathyW666.github.io/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: true,
-    isPost: false,
-    isPage: false,
-    isArchive: false
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://KathyW666.github.io/">
+
+
+
+
 
   <title>Kathy's Blog</title>
   
@@ -81,166 +136,267 @@
 
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
+    <a href="https://github.com/KathyW666" class="github-corner" aria-label="View source on Github">
+      <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+      </svg>
+    </a>
+    <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
+    <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Kathy's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
-
 
 <nav class="site-nav">
   
-  <ul id="menu" class="menu">
+
+  
+    <ul id="menu" class="menu">
+      
+        
         <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
-
-  </li>
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
-
-  </li>
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
-
-  </li>
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
-
-  </li>
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
 
-  </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>Schedule</a>
-
-  </li>
-  </ul>
-
-</nav>
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
     </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
+    <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-
-          <div class="content">
+          <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
 
-  <div class="posts-expand">
-        
+  
+
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/11/06/WordNet/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/06/WordNet/" class="post-title-link" itemprop="url">WordNet</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/06/WordNet/" itemprop="url">WordNet</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-06T16:30:02+08:00">
+                2019-11-06
+              </time>
+            
 
-              <time title="Created: 2019-11-06 16:30:02" itemprop="dateCreated datePublished" datetime="2019-11-06T16:30:02+08:00">2019-11-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-11 16:02:17" itemprop="dateModified" datetime="2019-11-11T16:02:17+08:00">2019-11-11</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/普林斯顿算法/" itemprop="url" rel="index">
                     <span itemprop="name">普林斯顿算法</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/11/06/WordNet/" class="leancloud_visitors" data-flag-title="WordNet">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -248,171 +404,166 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="WordNet-Assignment"><a href="#WordNet-Assignment" class="headerlink" title="WordNet Assignment"></a>WordNet Assignment</h1><ul>
-<li><a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php" target="_blank" rel="noopener"><em>题目资料 链接</em></a></li>
-<li><a href="https://github.com/KathyW666/Messy/tree/master/Princeton%20Algorithms/Algorithms%20Part2/Week1%20WordNet" target="_blank" rel="noopener">_代码_</a></li>
-</ul>
-<h2 id="1、题目背景"><a href="#1、题目背景" class="headerlink" title="1、题目背景"></a>1、题目背景</h2><h3 id="1-WordNet"><a href="#1-WordNet" class="headerlink" title="1. WordNet"></a>1. WordNet</h3><p><em>WordNet</em> 由自于普林斯顿大学设计，是一种基于认知语言学的英语词典。综合了语言学，计算机等相关学科指示，按照词义将单词整理出同义词组和上下义关联关系，形成的一个网络。</p>
-<h4 id="一些概念"><a href="#一些概念" class="headerlink" title="一些概念"></a>一些概念</h4><ul>
-<li>同义词集 - synsets：语义相同的一组单词</li>
-<li>上义词 - hypernym：对事物的概括性、抽象性说明</li>
-<li>下义词 - hyponym：对事物的具体表现形式或更为具体的说明</li>
-</ul>
-<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><ul>
-<li><a href="https://baike.baidu.com/item/Wordnet/10349844?fr=aladdin" target="_blank" rel="noopener">_百度_</a></li>
-<li><a href="https://wordnet.princeton.edu/" target="_blank" rel="noopener"><em>wordnet</em></a></li>
-</ul>
-<h3 id="2-BFS"><a href="#2-BFS" class="headerlink" title="2. BFS"></a>2. BFS</h3><p>广度优先搜索，利用队列（queue）实现的一种暴力搜索算法，最简便的图的搜索算法之一。</p>
-<p>相比 DFS 利用栈结构（stack）递归进项搜索，容易理解，BFS 会更经常用于与“最小”/“最短”等关键词相关的图问题。</p>
-<p>Dijkstra 单源最短路径算法和 Prim 最小生成树算法都采用了和宽度优先搜索类似的思想。</p>
-<p><a href="https://algs4.cs.princeton.edu/41graph" target="_blank" rel="noopener"><em>DFS 和 BFS</em></a></p>
-<h2 id="2、题目描述"><a href="#2、题目描述" class="headerlink" title="2、题目描述"></a>2、题目描述</h2><p><a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php" target="_blank" rel="noopener"><em>题目资料 链接</em></a></p>
-<p>总结为以下 4 点：</p>
-<ul>
-<li>给定两个节点，寻找有向图中两个节点的最短距离&amp;公共祖先</li>
-<li>给出两个节点的集合，寻找两个集合中距离最短的两个节点的距离和公共祖先</li>
-<li>给出两个输入文件，构建有向图<ul>
-<li>节点 id 所对应的同义词集 <a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/files/synsets.txt" target="_blank" rel="noopener"><em>synsets.txt</em></a></li>
-<li>词集间 id 的上下义关系 <a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/files/hypernyms.txt" target="_blank" rel="noopener"><em>hypernyms.txt</em></a></li>
-</ul>
-</li>
-<li>给出一组词组，寻找这组词当中最无关的一项</li>
-</ul>
-<h2 id="3、文件结构"><a href="#3、文件结构" class="headerlink" title="3、文件结构"></a>3、文件结构</h2><h3 id="引用外部类-algs4-jar"><a href="#引用外部类-algs4-jar" class="headerlink" title="引用外部类 - algs4.jar"></a>引用外部类 - algs4.jar</h3><ul>
-<li>Digraph.java</li>
-<li>BreadthFirstDirectedPaths.java</li>
-</ul>
-<h3 id="自身类"><a href="#自身类" class="headerlink" title="自身类"></a>自身类</h3><ul>
-<li>SAP.java</li>
-<li>WordNet.java</li>
-<li>Outcast.java</li>
-</ul>
-<h2 id="4、解决思路"><a href="#4、解决思路" class="headerlink" title="4、解决思路"></a>4、解决思路</h2><h3 id="暴力求解引用外部类"><a href="#暴力求解引用外部类" class="headerlink" title="暴力求解引用外部类"></a>暴力求解引用外部类</h3><h4 id="1-SAP-java"><a href="#1-SAP-java" class="headerlink" title="1. SAP.java"></a>1. SAP.java</h4><p>SAP.java 主要完成利用 bfs 算法，在有向图中寻找共同祖先和最小路径长度的问题。构造函数输入该有向图，其中提供了两个 API length() 和 ancestor()：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> w)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> bfsSearch(v, w)[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">(Iterable&lt;Integer&gt; v, Iterable&lt;Integer&gt; w)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> bfsSearch(v, w)[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">ancestor</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> w)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> bfsSearch(v, w)[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">ancestor</span><span class="params">(Iterable&lt;Integer&gt; v, Iterable&lt;Integer&gt; w)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> bfsSearch(v, w)[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>关于路径长度和祖先的定义，下图是个简单的示意。在一个有向图中，给定两个节点 v，w，则它们之间的 length 为两者都可到达某一个节点时，最小的边的数量，祖先节点即为该节点。当输入是两个节点的可迭代集合，表示寻找两个集合中拥有最短长度的两个节点的 length 和 ancestor。具体描述见：<a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php" target="_blank" rel="noopener"><em>题目资料 链接</em></a></p>
-<p><img src="/2019/11/06/WordNet/simple_fig.png" alt=""></p>
-<p>对于<code>SAP.java</code>的实现，这种方法使用到了官方 algs4.jar 包中的<a href="https://algs4.cs.princeton.edu/42digraph/BreadthFirstDirectedPaths.java.html" target="_blank" rel="noopener"><em><code>BreadthDirectedFirstPaths.java</code></em></a>类</p>
-<blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="comment">// BFS from single source</span></span><br><span class="line">&gt; <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">bfs</span><span class="params">(Digraph G, <span class="keyword">int</span> s)</span> </span>&#123;</span><br><span class="line">&gt;     Queue&lt;Integer&gt; q = <span class="keyword">new</span> Queue&lt;Integer&gt;();</span><br><span class="line">&gt;     marked[s] = <span class="keyword">true</span>;</span><br><span class="line">&gt;     distTo[s] = <span class="number">0</span>;</span><br><span class="line">&gt;     q.enqueue(s);</span><br><span class="line">&gt;     <span class="keyword">while</span> (!q.isEmpty()) &#123;</span><br><span class="line">&gt;         <span class="keyword">int</span> v = q.dequeue();</span><br><span class="line">&gt;         <span class="keyword">for</span> (<span class="keyword">int</span> w : G.adj(v)) &#123;</span><br><span class="line">&gt;             <span class="keyword">if</span> (!marked[w]) &#123;</span><br><span class="line">&gt;                 edgeTo[w] = v;</span><br><span class="line">&gt;                 distTo[w] = distTo[v] + <span class="number">1</span>;</span><br><span class="line">&gt;                 marked[w] = <span class="keyword">true</span>;</span><br><span class="line">&gt;                 q.enqueue(w);</span><br><span class="line">&gt;             &#125;</span><br><span class="line">&gt;         &#125;</span><br><span class="line">&gt;     &#125;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>上面是 BreadthDirectedFirstPaths.java 中 bfs 的实现。marked[] 保存节点是否已经走过，distTo[] 记录从节点 s 到该节点的最短长度。这容易理解，因为广度优先，循环到当前节点即为最短路。普通的利用 queue 保存当前节点 v 的所有邻居，v 出队，v 的所有邻居判断完之后入队。如果输入为节点集合，则初始化 queue 时，需要把集合内所有节点入队。若节点 d 不可由 s 到达，marked[d]=false。</p>
-<p>该版本 SAP.java 的基本思想是，对节点 or 节点集合 v 和 w 分别计算到其它所有点的最短路径。之后遍历一遍所有节点，判断是否同时可达 v 和 w，若可以则记录并更新 min length。主要由 bfsSearch() 方法完成。</p>
-<h4 id="2-WordNet-java"><a href="#2-WordNet-java" class="headerlink" title="2. WordNet.java"></a>2. WordNet.java</h4><p>WordNet.java 主要完成从给定的同义词集 <a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/files/synsets.txt" target="_blank" rel="noopener"><em>synsets.txt</em></a> 和上义词关系 <a href="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/files/hypernyms.txt" target="_blank" rel="noopener"><em>hypernyms.txt</em></a> 中，构建有向图的功能。synsets.txt 中有三个域，每一个节点对应一个 id ，一个 id 映射到一个同义词集中，这个同义词集中包含多个词(word)，最后一个域是对这一组词的解释，对于图的构建没有作用。hypernyms.txt 中给了节点间的指向关系，即有向图的边。</p>
-<p>主要 API 如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// is the word a WordNet noun?</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isNoun</span><span class="params">(String word)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">// distance between nounA and nounB (defined below)</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">distance</span><span class="params">(String nounA, String nounB)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">// a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB</span></span></span><br><span class="line"><span class="function"><span class="comment">// in a shortest ancestral path (defined below)</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">sap</span><span class="params">(String nounA, String nounB)</span></span></span><br></pre></td></tr></table></figure>
-<p>在 SAP.java 已经确定的情况下，这一部分仅为简单的输入字符串处理，构建有向图的过程，用到了 algs4.jar 中的 Digraph.java 类。输入两个词，寻找他们的共同上义词和距离，均可使用 SAP.java 中的方法。</p>
-<p>节点对在这个版本中用了两个 map：一个 key 为 id，value 为对应的 synset。由于不涉及查找，这里可以直接用数组来优化；另一个 key 为单词，value 为该单词所在的节点的 list（因为一次多义，可能属于多个 id）。这个 map 用于 distance() 和判断单词是否属于该词典 isNoun() 两个 API。</p>
-<h4 id="3-OutCast-java"><a href="#3-OutCast-java" class="headerlink" title="3. OutCast.java"></a>3. OutCast.java</h4><p>输入一组词，利用 WordNet.java 中的 distance() 方法计算每个词与其他词的距离之和。和最大的单词即为 OutCast。</p>
-<h3 id="问题-amp-优化"><a href="#问题-amp-优化" class="headerlink" title="问题&amp;优化"></a>问题&amp;优化</h3><h4 id="1-Coding-Styles"><a href="#1-Coding-Styles" class="headerlink" title="1. Coding Styles"></a>1. Coding Styles</h4><h5 id="1-excessive-boxing"><a href="#1-excessive-boxing" class="headerlink" title="1) excessive boxing"></a>1) excessive boxing</h5><p>初始代码中有这样一句报 warning：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> id = Integer.valueOf(realms[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">//Warning：converts String to primitive using excessive boxing</span></span><br></pre></td></tr></table></figure>
-<p>问题出于对装箱(boxing)这个概念不太了解，而且 java 中有自动装箱机制，平时没注意过。</p>
-<p>装箱 就是把“值类型”转换成“引用类型”；对应的拆箱(unboxing)就是把“引用类型”转换成“值类型”。值类型一般来说是创建在栈中，引用对象的指针在栈中创建，实际对象则存于堆内存中。</p>
-<p>怎么修改？由于 valueOf 返回的是 Integer 包装类，而 parseInt 返回的是 int 基本类型</p>
-<blockquote>
-<p>In summary, parseInt(String) returns a primitive int, whereas valueOf(String) returns a new Integer() object.</p>
-</blockquote>
-<ul>
-<li><a href="https://my.oschina.net/871120/blog/495462" target="_blank" rel="noopener"><em>装箱&amp;拆箱</em></a></li>
-<li><a href="https://www.mkyong.com/java/java-convert-string-to-int/" target="_blank" rel="noopener"><em>Integer.valueOf() vs Integer.parseInt()</em></a></li>
-<li><a href="https://my.oschina.net/Chaos777/blog/295073" target="_blank" rel="noopener"><em>Java 自动装箱与拆箱及其陷阱</em></a></li>
-<li><a href="https://my.oschina.net/u/2260184/blog/509857" target="_blank" rel="noopener"><em>Java 基础之自动装箱和自动拆箱源码分析</em></a></li>
-</ul>
-<h5 id="2-new-String-和字面量赋值"><a href="#2-new-String-和字面量赋值" class="headerlink" title="2) new String() 和字面量赋值"></a>2) new String() 和字面量赋值</h5><p>初始化 String 变量时有这样一个 warning</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String outcast = <span class="keyword">new</span> String();</span><br><span class="line"><span class="comment">//Warning：Creates the empty string using 'new String()'. Use the string literal "" instead.</span></span><br></pre></td></tr></table></figure>
-<p><strong>nice！</strong> 因为这个问题又复习了一遍 JVM。正式运行程序时，.class 文件中的大部分数据被加载到运行时常量池中。此时字符串本体仍被创建在堆内存中。而在永生代方法区之外，保存有一个字符串常量池，里面储存该字符串对象的引用。使用字面量创建时，虚拟机会先从字符创常量池中找是否有值相等的引用，如果有则返回这个引用。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"string"</span>;</span><br><span class="line">String str2 = <span class="string">"string"</span>;</span><br><span class="line">String str3 = <span class="keyword">new</span> String(<span class="string">"string"</span>);</span><br></pre></td></tr></table></figure>
-<p>所以以上 str1 和 str2 的指向同一个堆内存地址，str3 在堆中申请了新的地址创建新的对象。</p>
-<p>下面的资料生动形象地说明发生了什么：</p>
-<ul>
-<li><a href="https://www.zhihu.com/question/29884421/answer/113785601" target="_blank" rel="noopener"><em>java 用这样的方式生成字符串：String str = “Hello”，到底有没有在堆中创建对象？</em></a></li>
-<li><a href="http://blog.jamesdbloom.com/JVMInternals.html" target="_blank" rel="noopener"><em>JVM Interval</em></a></li>
-</ul>
-<h5 id="3-final-变量的使用"><a href="#3-final-变量的使用" class="headerlink" title="3) final 变量的使用"></a>3) final 变量的使用</h5><p>需要考虑变量不发生变化时，使用 final 修饰符提高性能。</p>
-<ul>
-<li><a href="https://www.jianshu.com/p/f68d6ef2dcf0" target="_blank" rel="noopener"><em>final of Java</em></a></li>
-</ul>
-<h4 id="2-Edge-cases"><a href="#2-Edge-cases" class="headerlink" title="2. Edge cases"></a>2. Edge cases</h4><h5 id="1-null-的判断"><a href="#1-null-的判断" class="headerlink" title="1) null 的判断"></a>1) null 的判断</h5><p>输入参数是 list 是，注意判断内部元素是否为 null</p>
-<h5 id="2）immutable-的-SAP-Java"><a href="#2）immutable-的-SAP-Java" class="headerlink" title="2）immutable 的 SAP.Java"></a>2）immutable 的 SAP.Java</h5><p>这里有要求说 SAP.java 类需要是不可变的，但是构建时使用了 Digraph 类是可变的，因此需要 new 一个拷贝，不能直接引用。</p>
-<h5 id="3）rooted-DAG"><a href="#3）rooted-DAG" class="headerlink" title="3）rooted DAG"></a>3）rooted DAG</h5><p>要求判断输入的图是否是只有一个根的有向无环图。根据每个节点的出度判断。</p>
-<h4 id="3-优化"><a href="#3-优化" class="headerlink" title="3. 优化"></a>3. 优化</h4><p>在 bfs 中可以对两个节点轮询查找，找到共同祖先后终止循环，减少循环次数。参考<a href="https://www.cnblogs.com/mingyueanyao/p/9166441.html" target="_blank" rel="noopener"><em>https://www.cnblogs.com/mingyueanyao/p/9166441.html</em></a></p>
-<p>综上，code 详见：<a href="https://github.com/KathyW666/Messy/tree/master/Princeton%20Algorithms/Algorithms%20Part2/Week1%20WordNet" target="_blank" rel="noopener">👉<em>here</em></a></p>
-<h2 id="5、总结"><a href="#5、总结" class="headerlink" title="5、总结"></a>5、总结</h2><ul>
-<li>了解了 WordNet 及语义处理的基本概念</li>
-<li>加深理解有向图结构及方法</li>
-<li>加深理解 BFS 算法</li>
-<li>积累 null 及相关边界条件处理经验</li>
-<li>熟悉 java 装箱 拆箱机制</li>
-<li>复习 final 关键字的用法</li>
-<li>复习了 jvm 基本知识</li>
-</ul>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          WordNet Assignment
+题目资料 链接
+_代码_
+
+1、题目背景1. WordNetWordNet 由自于普林斯顿大学设计，是一种基于认知语言学的英语词典。综合了语言学，计算机等相关学科指示，按照词义将单词整理出同义词组和上下义关联关系，形成的一个网络。
+一些概念
+同义词集 - synsets：语义相同的一组单词
+上义词 - hypernym：对事物的概括性、抽象性说明
+下义词 - 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/11/06/WordNet/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/09/13/微信小程序分享功能/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/13/微信小程序分享功能/" class="post-title-link" itemprop="url">微信小程序分享功能</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/13/微信小程序分享功能/" itemprop="url">微信小程序分享功能</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-13T10:00:49+08:00">
+                2019-09-13
+              </time>
+            
 
-              <time title="Created: 2019-09-13 10:00:49" itemprop="dateCreated datePublished" datetime="2019-09-13T10:00:49+08:00">2019-09-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-14 21:08:11" itemprop="dateModified" datetime="2019-09-14T21:08:11+08:00">2019-09-14</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/微信小程序/" itemprop="url" rel="index">
                     <span itemprop="name">微信小程序</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/09/13/微信小程序分享功能/" class="leancloud_visitors" data-flag-title="微信小程序分享功能">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -420,138 +571,164 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="微信小程序分享功能知识点"><a href="#微信小程序分享功能知识点" class="headerlink" title="微信小程序分享功能知识点"></a>微信小程序分享功能知识点</h1><p>最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。</p>
-<h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><blockquote>
-<p>概览部分引用自《微信开放文档》</p>
-</blockquote>
-<h3 id="小程序与普通网页开发的区别"><a href="#小程序与普通网页开发的区别" class="headerlink" title="小程序与普通网页开发的区别"></a>小程序与普通网页开发的区别</h3><p>网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。</p>
-<p>在小程序中，渲染和脚本分别运行在不同的线程中。</p>
-<p>逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。这导致一些常用库（jQuery、 Zepto 等），在小程序中是无法运行的。同时 JSCore 的环境同 NodeJS 环境也是不尽相同，所以一些 NPM 的包在小程序中也是无法运行的<a href="[微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#)">^1</a>。</p>
-<h3 id="小程序运行机制"><a href="#小程序运行机制" class="headerlink" title="小程序运行机制"></a>小程序运行机制</h3><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><ul>
-<li>热启动：假如用户已经打开过某小程序，然后在一定时间内再次打开该小程序，此时无需重新启动，只需将后台态的小程序切换到前台，这个过程就是热启动。</li>
-<li>冷启动：用户首次打开或小程序被微信主动销毁后再次打开的情况，此时小程序需要重新加载启动，即冷启动。</li>
-<li>小程序没有重启的概念。</li>
-</ul>
-<h4 id="前台-后台状态"><a href="#前台-后台状态" class="headerlink" title="前台/后台状态"></a>前台/后台状态</h4><p>当用户点击右上角胶囊按钮关闭小程序，或者按了设备 Home 键离开微信时，小程序并没有直接销毁，而是进入了后台状态；</p>
-<p>当用户再次进入微信或再次打开小程序，小程序又会从后台进入前台。</p>
-<h4 id="小程序销毁"><a href="#小程序销毁" class="headerlink" title="小程序销毁"></a>小程序销毁</h4><p>需要注意的是：只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。</p>
-<ul>
-<li>当小程序进入后台，客户端会维持一段时间的运行状态，超过一定时间后（目前是 5 分钟）小程序会被微信主动销毁。<br>当小程序占用系统资源过高，可能会被系统销毁或被微信客户端主动回收。</li>
-<li>在 iOS 上，当微信客户端在一定时间间隔内（目前是 5 秒）连续收到两次及以上系统内存告警时，会主动进行小程序的销毁，并提示用户 「该小程序可能导致微信响应变慢被终止」。</li>
-<li>建议小程序在必要时使用 wx.onMemoryWarning 监听内存告警事件，进行必要的内存清理</li>
-</ul>
-<p><a>在调试过程中，安卓小程序在后台显示为与 App 类似的实际 view，也就是说安卓用户可以手动销毁小程序，但在 IOS 系统上，小程序不显示。这一点还有待考证。</a></p>
-<h4 id="WXS-响应事件的动机"><a href="#WXS-响应事件的动机" class="headerlink" title="WXS 响应事件的动机"></a>WXS 响应事件的动机</h4><p>由于视图层和逻辑层分开，有频繁用户交互的效果会比较卡顿。需要先将用户在视图层的 event 传进逻辑层，逻辑层处理完成之后通过 setData()再传入视图层。需要两次通信+一次渲染。setData 渲染也会阻塞其它脚本执行，导致了整个用户交互的动画过程会有延迟。</p>
-<p>因此 WXS 的使用的思路是减少通信的次数，让部分逻辑代码在视图层运行。</p>
-<h2 id="微信分享"><a href="#微信分享" class="headerlink" title="微信分享"></a>微信分享</h2><h3 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h3><p>目前微信内分享常见三种形式，推荐到好物圈，朋友圈分享，微信好友/群分享</p>
-<p>好物圈以插件形式存在，下文不具体涉及。</p>
-<p>朋友圈分享，目前来看大多用画图来完成。由于微信没有提供直接分享朋友圈的接口，因此各路神通想出了：生成图片保存相册，转发朋友圈，扫图中小程序码的“三段跳”解决方案。这样在海报样式上能做更大的文章。比如插入用户信息，产品的信息，更酷炫的设计等等。</p>
-<p>除了朋友圈分享这种方式，微信好友/群内分享也很常见。微信提供了很多 API，其中包括监听页面内转发事件。在转发的过程中默认截取当前页面为转发图。如果想要得到更酷炫的转发图，也需要用到 canvas 画图来生成。</p>
-<p>微信在 Page 中提供了 onShareAppMessage 的事件处理函数，监听用户点击页面内转发按钮。该函数返回一个对象，用于自定义转发内容：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    title: <span class="comment">//标题</span></span><br><span class="line">    path: <span class="comment">//转发路径</span></span><br><span class="line">    imgUrl: <span class="comment">//自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>因此，自然而然可以想到，在 imgUrl 上做文章。需要动态生成一张图片，并保存其 url。到此，思路便比较清晰了：生成图片可用 canvas 绘图，并利用微信提供的 API - wx.canvasToTempFilePath 得到本地图片 url。</p>
-<h3 id="程序流程"><a href="#程序流程" class="headerlink" title="程序流程"></a>程序流程</h3><p>分享图生成的画图方法在页面的生命周期中位置如下：<br><img src="/2019/09/13/微信小程序分享功能/wx-figure.png" alt="1"></p>
-<p>页面视图 wxml 文件中，button 绑定 onShareAppMessage()方法。同时设置 canvas 画布。利用 wxss 设置样式移到可见范围之外。</p>
-<p>页面初次加载(onLoad)时，获取需要分享信息数据。可能同时包含有文字和图片信息。若图片来自网络，则会先下载到本地为画图备用。需要利用 wx.getImageInfo()，获得该图片的本地 url，在 success 回调函数中进行下一步处理画图。可以将该 API 包进一个 Promise 对象中返回，便于其他模块处理网络图片的链式调用和后续处理。</p>
-<p>创建 canvas 上下文，利用 canvas 相关方法画图。关键的 draw()方法有三个重要参数，第一个表示是否保留画布之前内容，第二个为绘制完的回调函数。在回调函数中调用 wx.canvasToTempFilePath()，把当前画布指定区域的内容导出生成指定大小的图片。第三个为需要作用于的 this 对象。这一点很重要，因为需要在 wx.canvasToTempFilePath()成功后，在其 success 回调中，将生成图片的 url 设置为 page 的全局变量。这样能在 page 作用域内，将生成图片的 url 设置到事件处理函数 onShareAppMessage()当中。</p>
-<h3 id="FAQs"><a href="#FAQs" class="headerlink" title="FAQs"></a>FAQs</h3><ol>
-<li><p>为什么不隐藏 canvas，设置 display:hidden</p>
-<p>canvas 标签隐藏会导致绘制失效</p>
-</li>
-<li><p>为什么在页面加载时就生成图片，而不是点击分享按钮后生成图片</p>
-<p>在页面事件 onShareAppMessage()运行时，只有按规则返回具有对应参数的对象时，才能成功弹出分享到微信好友界面。（作者尝试通过 Promise 异步返回，但由于 wx 限制，若返回 Promise 对象便不能识别。）然而，在画图过程中调用的几个 API 均为异步方法，因此对于 page 页面的事件，无法做到先点击 share button，触发 onShareAppMessage()后，在该方法内调用其他异步绘图方法。这样无法得到新绘制图的 url。</p>
-</li>
-<li><p>关于 2 真的做不到吗？我不是很相信</p>
-<p>具体见 4、同类小程序分享调研</p>
-</li>
-<li><p>第一次点分享按钮图片不是我想要的，退出再点击一次就好了</p>
-<p>说明异步画图的 url 还没设置进去，用户就点击了分享按钮。这个时候显示默认的界面截图。退出后再点击的过程中，图片画好了，url 已生成也设置进去了，正常显示。</p>
-<p>为了解决这个问题，可以添加一个 page 全局变量记录画图状态，已画完才显示 button，否则不显示。</p>
-</li>
-<li><p>新绘制的图片中可以将多张图片合成在一起吗？</p>
-<p>能，在用户授权后，还可以添加用户头像和昵称信息</p>
-</li>
-</ol>
-<h3 id="同类小程序分享功能调研-amp-猜想"><a href="#同类小程序分享功能调研-amp-猜想" class="headerlink" title="同类小程序分享功能调研&amp;猜想"></a>同类小程序分享功能调研&amp;猜想</h3><p>唯品会：有信息，点击分享 button，加载约 1 秒，弹出 Component 组件。在组建内集和好物圈，微信好友，朋友圈三种分享方式。分别可点击，有不同效果。<br>猜想：虽然不知道源码，但 share-button 基本和其他页面元素一同加载出来。点击 button 后有明显的 1 秒左右加载过程。笔者猜想 canvas 画图便设置在了这段时间内。注意这本质上也是先画图，再分享的过程。但在体验上完美地解决了问题 2 的整套动作。</p>
-<p>网易考拉：无信息，只有一个网络图没处理</p>
-<p>蘑菇街：有信息，在微信分享弹框内会有“。。。”等待加载。<br>猜想：有时主图加载时显示为视频，此时若点击过快会出现只有一张图的情况。笔者猜想是由后端生成的图片，直接返回 url。点击过快可能信息还未返回，因此显示默认图片。</p>
-<p>京东，拼多多，每日优鲜：有信息，点击过快只有主图<br>猜想：前端画图，未处理分享按钮，因此若点击过快没画完，则设置为主图。</p>
-<p>苏宁易购：类似唯品会的“二级跳”，但是点击一级分享按钮后，过一会才会生成分享微信好友的按钮。这段时间内，大概率在进行 canvas 画图。画完图之后显示分享按钮。</p>
-<h3 id="后端方案"><a href="#后端方案" class="headerlink" title="后端方案"></a>后端方案</h3><p>保险的做法，不受微信能力的限制。在后端画图，大体上需要提供两个 API。</p>
-<ul>
-<li>画图并上传服务器，返回 URL。</li>
-<li>通过刚才生成的 URL 拿到图片</li>
-</ul>
-<p>存在的问题：后端画图无可厚非，不过在实际过程中，以 Java 为例，画图时间较长。如果加上来回前后端通信的时间，似乎时延是不可忍受的量级。同时由于该需求中需要显示的信息存在过期问题，缓存机制也将需要进一步考虑。</p>
-<h3 id="可能存在的-bug"><a href="#可能存在的-bug" class="headerlink" title="可能存在的 bug"></a>可能存在的 bug</h3><ul>
-<li>人民币符号‘¥’在 ios 系统中显示可能出现问题</li>
-</ul>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ul>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#" target="_blank" rel="noopener">微信开放文档</a></li>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#" target="_blank" rel="noopener">微信小程序前端生成图片用于分享朋友圈最终解决方案</a></li>
-</ul>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          微信小程序分享功能知识点最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。
+概览
+概览部分引用自《微信开放文档》
+
+小程序与普通网页开发的区别网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。
+在小程序中，渲染和脚本分别运行在不同的线程中。
+逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/13/微信小程序分享功能/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/05/13/机器社交和人类社交/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/05/13/机器社交和人类社交/" class="post-title-link" itemprop="url">机器社交和人类社交</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/13/机器社交和人类社交/" itemprop="url">机器社交和人类社交</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
               
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-13T19:27:32+08:00">
+                2019-05-13
+              </time>
+            
 
-              <time title="Created: 2019-05-13 19:27:32 / Modified: 21:35:36" itemprop="dateCreated datePublished" datetime="2019-05-13T19:27:32+08:00">2019-05-13</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/小硕/" itemprop="url" rel="index">
                     <span itemprop="name">小硕</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/05/13/机器社交和人类社交/" class="leancloud_visitors" data-flag-title="机器社交和人类社交">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -559,91 +736,160 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文属于杂记，非科学文章，感兴趣可以深入查找文献，善莫大焉。</p>
-<p>今天看了社会学和脑科学中的一个社会脑理论 <a href="https://44984771-a-62cb3a1a-s-sites.googlegroups.com/site/dmobbs/relatedness_class/Dunbar_1998.pdf?attachauth=ANoY7cr6Zq53Pja4QbHLXPG-_T20ivePneNIgNk7TNWzphqd8aWiiXVOFTSZ1jKr4HVmLwpq4jQk-nsOGpx6omvHgC_mDU2qRFEjSnc5LEy8-ZfTC2bJxNoucGl06AiV-_kuq7eB2UbCLOHwGTLrZpo5VQqKP9c-qUe6A2wr4NycubVFCpBDpQ4qgnnuXSqwRpigzCvwR9S-51CT_-GM2GfN5PNnbt5mUGXhMdGh4_FeC7w2ZdOcheM%3D&amp;attredirects=0" target="_blank" rel="noopener">《The Social Brain Hypothesis》</a></p>
-<blockquote><p>Primates have larger brains relative to body size than all other vertebrates [1] and it is now widely accepted that the best functional predictor of relative brain size in non-human primates is social group size [2].</p>
-</blockquote>
-<p>就是说，人的社群规模和大脑尺寸之间的这种关联，有时被称作社会脑假说（social brain hypothesis）。也就是维持社会关系的能力越强，头……越大？</p>
-<p>基于社会脑假说计算出的人类社群规模应在 150 人左右，这个数字被称作“邓巴数”（Dunbar’s number）。事实证明，这也是一般人类社会团体和一般个人社交圈的人数。也就是说，社交群体的大小受到人脑能力的限制。</p>
-<p>那么机器同理，而机器的大脑或许是电池，或许是 CPU 寿命，受种种因素的限制，其社群大小应该也是受限的。</p>
-<p>为啥会想到这呢？</p>
-<p>之前导师提了个了词叫<code>机器社交</code>，虽然题目实在是太大，不过 5G 这波风口当下着眼点转向 IoT，想一想也不是完全没法讲这个故事。毕竟<code>NB-IoT</code>已经一些地区电表和智能家居试行了，更科幻的场景已经有电影及《底特律》这样的游戏帮我们构想了出来。</p>
-<div class="video-container"><iframe src="//www.youtube.com/embed/9vzY8tLukpM" frameborder="0" allowfullscreen></iframe></div>
-<p>可能是从事相关行业，《底特律》这个游戏的确是让我深思。直观地想这样一个问题：人的心里状态和情绪状态是否是可计算的吗？这其实就是那个耳熟能详的哲学问题：人工智能是真正的智能吗？然而 <a><code>真正的智能</code></a> 本身还没有定义，因此很难说。</p>
-<p>如果说如今的人工智能在思维和情感属性上和人类别无二致，也不是没有道理，当能源、存储空间、网络、材料、算力等发展再提升一个高度之后，机器也就大概率能达到人的基本形态了。皮肤可以人造，器官可以人造，血肉也可以（最近比尔·盖茨都投资推广人造肉了，2019.05），神经有电线，思维说到底就是巨型数据库，语言有 nlp、文本挖掘，视觉有 cv，所有经历过的事件及处理方式做训练集，可以把激素带入整个系统，那么快乐的时候分泌多巴胺，内啡肽 blabla，悲伤的时候分泌有害物质，如此情感和行为都可以抽象成训练的结果了。</p>
-<p>所以这么来看，当科技发展到包括但不限于以上环节到一定水平时，如果可以做到环环相扣，不出 bug，基本上也就差不多<code>变人</code>了。在定义人类基本价值观-比如自由 平等 公正 法治…-是 <b>好的</b> 前提下，价值观也是可以训练出来的（否则教育的意义何在），当系统判断正在经历的事件不属于价值观体系中正常的事件，系统也会产生不满等消极情绪，真正的智能不也就是 AI 的高级形式了么。</p>
-<p>估计到这个时候，人们又会讨论 我是谁 的哲学问题了，别说到时候，现在就已经开始讨论了哈哈哈哈。</p>
-<p>当然我们不能排除有超自然力或者人类尚未发现的重大理论的存在，因此只能说一切都是基于现有认知的想象。</p>
-<p>如果以上的假设成立，机器社交也会随之出现。其实上面这种范畴上的社交，属于高级意义上的，针对人类社会的社交。属于我上班摸鱼天马行空的想象，换句话说：</p>
-<p>是我想太多</p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          本文属于杂记，非科学文章，感兴趣可以深入查找文献，善莫大焉。
+今天看了社会学和脑科学中的一个社会脑理论 《The Social Brain Hypothesis》
+Primates have larger brains relative to body size than all other vertebrates [1] and it is now widely accepted that th
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/13/机器社交和人类社交/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/05/09/CSS3-flex布局/" class="post-title-link" itemprop="url">CSS3 flex布局</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/09/CSS3-flex布局/" itemprop="url">CSS3 flex布局</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-09T15:55:52+08:00">
+                2019-05-09
+              </time>
+            
 
-              <time title="Created: 2019-05-09 15:55:52" itemprop="dateCreated datePublished" datetime="2019-05-09T15:55:52+08:00">2019-05-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-05-13 00:03:30" itemprop="dateModified" datetime="2019-05-13T00:03:30+08:00">2019-05-13</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/FE/" itemprop="url" rel="index">
                     <span itemprop="name">FE</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/05/09/CSS3-flex布局/" class="leancloud_visitors" data-flag-title="CSS3 flex布局">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -651,148 +897,174 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h4 id="是什么？"><a href="#是什么？" class="headerlink" title="是什么？"></a>是什么？</h4><p>自适应弹性布局</p>
-<ul>
-<li>自动判断布局空间，修改自身尺寸</li>
-<li>多个 box 在多个方向进行对齐&amp;分布</li>
-</ul>
-<h4 id="什么时候用？适用于什么场景？"><a href="#什么时候用？适用于什么场景？" class="headerlink" title="什么时候用？适用于什么场景？"></a>什么时候用？适用于什么场景？</h4><ul>
-<li>布局内部需要自适应</li>
-<li>布局内部需要多个方向排列对齐</li>
-</ul>
-<p>应用于：</p>
-<ul>
-<li>移动端适配，移动端开发</li>
-<li>APP 组件，页面栏目 or 小范围板块布局</li>
-</ul>
-<h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
-<li><p>布局结构</p>
-<p>双层结构：外层容器<code>flex-container</code>,激活弹性机制。<br>内层<code>flex-item</code>自动获得相关特性。<br><code>flex-container</code>外部和<code>flex-item</code>内部元素不受影响。</p>
-</li>
-<li><p>flex 机制</p>
-<p>任何一个容器都可以指定为 flex 布局，其内部第一层级的子项自动变为 flex 项目</p>
-<pre><code>`display:flex` 块状flex容器
-`display:inline-flex`行间flex容器
-</code></pre><p><strong>一旦激活 flex 机制，子项的<font color="darkpink"><code>float</code></font>、<font color="darkpink"><code>clear</code></font> 和 <font color="darkpink"><code>vertical-align</code></font> 属性失效</strong></p>
-</li>
-<li><p>区域轴向</p>
-<p>主轴 &amp; 交叉轴，flex 容器的两端为轴的起点和终点</p>
-<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt="from:阮一峰-flex布局"></p>
-</li>
-</ul>
-<h4 id="flex-属性"><a href="#flex-属性" class="headerlink" title="flex 属性"></a>flex 属性</h4><p><code>flex-container</code>6 个属性，<code>flex-item</code>6 个属性</p>
-<ul>
-<li><p>外围容器相关属性：对子项的排列和对齐 - <code>flex-direction</code>：定义主轴和交叉轴的方向，文档流入盒子的方向 - <code>flex-wrap</code>：换行 <code>nowrap</code>：往往对应自适应，外围容器固定，item 自动变化 - <code>flex-flow</code>：文档流 <code>flex-direction</code> + <code>flex-wrap</code> 缩写 - <code>justify-content</code>：主轴对齐（左中右，留白环绕，留白中间） - <code>align-items</code>：交叉轴对齐 - <code>align-content</code>：交叉轴多行的对齐方式（容器若只有一行，则无效，避免与<code>align-items</code>发生冲突）</p>
-<p>那么问题来了：水平垂直居中的一个方式，就可以用<font color="darkpink"><strong><code>flex布局</code></strong></font>实现</p>
-</li>
-<li><p>子项相关属性：子项的自适应伸缩及分配</p>
-<ul>
-<li><code>flex-grow</code>：扩展比例，分配的是剩余的空间（wrap），默认 0 不扩展</li>
-<li><code>flex-shrink</code>：收缩比例（nowrap)，默认 1 等比收缩</li>
-<li><code>flex-basis</code>：定义 item 在主轴上的基本尺寸(定义子项的基本宽 or 高)，默认 auto</li>
-<li><code>flex</code>缩写 固定顺序（grow shrink basis）可省略。<code>none</code> <code>auto</code>（可扩展可收缩）</li>
-</ul>
-<p>快捷写法：只写 grow shrink，默认忽略设定的<code>width</code>；只写 basis 默认可扩展可收缩。尽量使用 flex 复合写法。</p>
-<ul>
-<li><code>align-self</code>：子项自身的交叉轴对齐方式</li>
-<li><code>order</code>：子项的排列顺序，数值越小越靠前，可以负数</li>
-</ul>
-<p>以上两个属于单独调整的两个属性</p>
-<p><img src="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png" alt="flex属性"></p>
-</li>
-</ul>
-<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><ul>
-<li>什么时候想到用 flex - 移动端 - 单、多行垂直居中 - 需要垂直对齐的列表元素 - 单行选项卡 - 垂直弹性布局 - <strong>分栏，一些栏定宽+其他栏自适应</strong></li>
-</ul>
-<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><ul>
-<li><p>骰子 🎲（练习对齐）👉<a href="https://github.com/KathyW666/FE-basis-demo/blob/master/CSS/layout/flex/dice-demo.html" target="_blank" rel="noopener">code</a></p>
-<p><img src="/2019/05/09/CSS3-flex布局/dice.png" alt="dice"></p>
-</li>
-<li><p>一栏定宽 + 一栏自适应 👉<a href="https://github.com/KathyW666/FE-basis-demo/blob/master/CSS/layout/flex/flex-demo.html" target="_blank" rel="noopener">code</a></p>
-</li>
-<li>tab 选项卡 👉<a href="https://github.com/KathyW666/FE-basis-demo/blob/master/CSS/layout/flex/flex-tab-demo.html" target="_blank" rel="noopener">code</a></li>
-<li><p>垂直弹性布局：👉<a href="https://github.com/KathyW666/FE-basis-demo/blob/master/CSS/layout/flex/flex-vertical-demo.html" target="_blank" rel="noopener">code</a></p>
-<p>另一种方法：header footer position 固定位置<br>注意对 <code>overflow</code> 和 <font color="darkpink"><code>超出视口</code></font>部分滚动的设置</p>
-</li>
-</ul>
-<h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ul>
-<li>简写 flex 属性，导致设定宽高无效</li>
-<li>flex 容器中的文本自动成为 flex 子项，除了空格</li>
-<li>子项的 float、clear 和 vertical-align 属性失效</li>
-<li>如果子项是绝对定位，定位基准参考 flex 容器的<strong><code>content</code></strong>盒子。因为 flex 本身就是对其 content 的文档流进行操作</li>
-<li>flex 子项的 margin：外边距合并失效，margin：auto 可自动分配剩余空间，达到垂直居中的效果，类似操作 flex 容器的主轴交叉轴对齐</li>
-<li>flex 容器主轴和 writing-mode：一旦独立设定 writing-mode，优先级高于 flex 容器轴向操作，子项内的文字也会随<br>writing-mode 改变</li>
-</ul>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><a href="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" target="_blank" rel="noopener">阮一峰-flex 布局</a></p>
-<p><a href="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png" target="_blank" rel="noopener">zhangwang-flex 属性</a></p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          flex 布局是什么？自适应弹性布局
+
+自动判断布局空间，修改自身尺寸
+多个 box 在多个方向进行对齐&amp;分布
+
+什么时候用？适用于什么场景？
+布局内部需要自适应
+布局内部需要多个方向排列对齐
+
+应用于：
+
+移动端适配，移动端开发
+APP 组件，页面栏目 or 小范围板块布局
+
+基础概念
+布局结构
+双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/09/CSS3-flex布局/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/04/27/纯css实现选项卡/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/04/27/纯css实现选项卡/" class="post-title-link" itemprop="url">纯css实现选项卡</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/27/纯css实现选项卡/" itemprop="url">纯css实现选项卡</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-27T16:51:58+08:00">
+                2019-04-27
+              </time>
+            
 
-              <time title="Created: 2019-04-27 16:51:58" itemprop="dateCreated datePublished" datetime="2019-04-27T16:51:58+08:00">2019-04-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-05-09 15:57:33" itemprop="dateModified" datetime="2019-05-09T15:57:33+08:00">2019-05-09</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/FE/" itemprop="url" rel="index">
                     <span itemprop="name">FE</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/27/纯css实现选项卡/" class="leancloud_visitors" data-flag-title="纯css实现选项卡">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -800,88 +1072,164 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>选项卡是个很常见的小组件，总结一下想到的知识点和方法</p>
-<p>这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等</p>
-<ol>
-<li>布局</li>
-</ol>
-<p><code>float</code> 肯定是可以实现的，<code>absolute</code>+<code>float:left</code>+<code>li</code>，将列表横向布局实现。</p>
-<p>如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空<code>div</code>清除浮动；“现代”方法用<code>::after</code>伪元素也分分钟解决，注意要设置伪元素为块级元素<code>block</code>才能出现效果，加上<code>clear:both</code></p>
-<p>接下来可能会引申到两端对齐 还可以用<code>inline-block</code>+<code>text-align: justify</code> 实现两端对齐，不过其默认对最后一行无效，新浏览器可配合<code>text-align-last: justify</code>使用。面对兼容问题一样可以使用添加空<code>div</code>或者伪元素，设置<code>display: inline-block</code>，并设置宽度为 100%</p>
-<p>另外也可以 <code>flex</code> ，操作更加容易一些</p>
-<ol start="2">
-<li>切换</li>
-</ol>
-<h5 id="利用-checked-及相关伪类"><a href="#利用-checked-及相关伪类" class="headerlink" title="利用 checked 及相关伪类"></a>利用 checked 及相关伪类</h5><p>利用<code>input radio</code>的单选特性实现切换，最后清除<code>radio</code>选项的视觉显示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!-- 纯css实现选项卡切换：利用checkbox及相关伪类 --&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			#box &#123;</span><br><span class="line">				width: 450px;</span><br><span class="line">				background: whitesmoke;</span><br><span class="line">				margin: 50px auto;</span><br><span class="line">				padding: 20px;</span><br><span class="line">				padding-top: 56px;</span><br><span class="line">				border-radius: 8px;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			#box span &#123;</span><br><span class="line">				position: absolute;</span><br><span class="line">				width: 150px;</span><br><span class="line">				text-align: center;</span><br><span class="line">				height: 36px;</span><br><span class="line">				line-height: 36px;</span><br><span class="line">				border-radius: 8px 8px 0 0;</span><br><span class="line">				background: silver;</span><br><span class="line">				top: 20px;</span><br><span class="line">			&#125;</span><br><span class="line">			#box label:nth-child(1) span&#123;</span><br><span class="line">				left: 20px;</span><br><span class="line">			&#125;</span><br><span class="line">			#box label:nth-child(2) span&#123;</span><br><span class="line">				left: 170px;</span><br><span class="line">			&#125;</span><br><span class="line">			#box label:nth-child(3) span&#123;</span><br><span class="line">				left: 320px;</span><br><span class="line">			&#125;</span><br><span class="line">			#box ul&#123;</span><br><span class="line">				margin: 0;</span><br><span class="line">				padding: 0;</span><br><span class="line">				list-style: none;</span><br><span class="line">				background: white;</span><br><span class="line">				padding: 10px;</span><br><span class="line">				line-height: 26px;</span><br><span class="line">				display: none;</span><br><span class="line">			&#125;</span><br><span class="line">			#box li&#123;</span><br><span class="line">				height: 26px;</span><br><span class="line">				overflow: hidden;</span><br><span class="line">			&#125;</span><br><span class="line">			#box li:hover&#123;</span><br><span class="line">				color: orangered;</span><br><span class="line">			&#125;</span><br><span class="line">			#box input &#123;</span><br><span class="line">				display: none;</span><br><span class="line">			&#125;</span><br><span class="line">			#box input:checked ~ ul &#123;</span><br><span class="line">				display: block;</span><br><span class="line">			&#125;</span><br><span class="line">			#box input:checked ~ span &#123;</span><br><span class="line">				background: white;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;box&quot;&gt;</span><br><span class="line">			&lt;label&gt;</span><br><span class="line">				&lt;input type=&quot;radio&quot; name=&quot;tab&quot; id=&quot;tab1&quot; checked=&quot;checked&quot;/&gt;</span><br><span class="line">				&lt;span&gt;今日要闻&lt;/span&gt;</span><br><span class="line">				&lt;ul&gt;</span><br><span class="line">					&lt;li&gt;免费游戏如何让玩家们爆肝?日常任务从早到晚都做不完&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;免费游戏如何让玩家们爆肝?日常任务从早到晚都做不完&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;免费游戏如何让玩家们爆肝?日常任务从早到晚都做不完&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;免费游戏如何让玩家们爆肝?日常任务从早到晚都做不完&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;免费游戏如何让玩家们爆肝?日常任务从早到晚都做不完&lt;/li&gt;</span><br><span class="line">				&lt;/ul&gt;</span><br><span class="line">			&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">			&lt;label&gt;</span><br><span class="line">				&lt;input type=&quot;radio&quot; name=&quot;tab&quot; id=&quot;tab2&quot; /&gt;</span><br><span class="line">				&lt;span&gt;热门活动&lt;/span&gt;</span><br><span class="line">				&lt;ul&gt;</span><br><span class="line">					&lt;li&gt;《自走棋手游》为了不被国内大厂借鉴 把自己改的面目全非&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;《自走棋手游》为了不被国内大厂借鉴 把自己改的面目全非&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;《自走棋手游》为了不被国内大厂借鉴 把自己改的面目全非&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;《自走棋手游》为了不被国内大厂借鉴 把自己改的面目全非&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;《自走棋手游》为了不被国内大厂借鉴 把自己改的面目全非&lt;/li&gt;</span><br><span class="line">				&lt;/ul&gt;</span><br><span class="line">			&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">			&lt;label&gt;</span><br><span class="line">				&lt;input type=&quot;radio&quot; name=&quot;tab&quot; id=&quot;tab3&quot; /&gt;</span><br><span class="line">				&lt;span&gt;热点话题&lt;/span&gt;</span><br><span class="line">				&lt;ul&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">					&lt;li&gt;邀请玩家一起共创全新NPC角色赢取海量QB&lt;/li&gt;</span><br><span class="line">				&lt;/ul&gt;</span><br><span class="line">			&lt;/label&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/2019/04/27/纯css实现选项卡/checked.gif" alt="checked实现"></p>
-<h5 id="利用-锚点实现-herf-target"><a href="#利用-锚点实现-herf-target" class="headerlink" title="利用 锚点实现 herf + :target"></a>利用 锚点实现 herf + :target</h5><p>利用<code>a</code>将<code>href</code>与对应的<code>id</code>绑定，调整显示层级<code>z-index</code>实现切换</p>
-<p>要注意利用<code>a</code>的话，点击之后后会自动跳转到 以对应<code>id</code>元素为页面顶端的位置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin: 0;</span><br><span class="line">				padding: 0;</span><br><span class="line">			&#125;</span><br><span class="line">			div&#123;</span><br><span class="line">				border: 1px black solid;</span><br><span class="line">				position: relative;</span><br><span class="line">			&#125;</span><br><span class="line">			div span&#123;</span><br><span class="line">				display: flex;</span><br><span class="line">			&#125;</span><br><span class="line">			div span&gt;a&#123;</span><br><span class="line">				flex: 1;</span><br><span class="line">				text-align: center;</span><br><span class="line">				line-height: 48px;</span><br><span class="line">				color: white;</span><br><span class="line">				background: cornflowerblue;</span><br><span class="line">			&#125;</span><br><span class="line">			div ul li&#123;</span><br><span class="line">				position: absolute;</span><br><span class="line">				width: 100%;</span><br><span class="line">				height: 20vw;</span><br><span class="line">				background: red;</span><br><span class="line">				left: 0;</span><br><span class="line">				top: 48px;</span><br><span class="line">			&#125;</span><br><span class="line">			div :target&#123;</span><br><span class="line">				z-index: 55;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">&lt;!--</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt; --&gt;</span><br><span class="line">		&lt;div&gt;</span><br><span class="line">			&lt;span&gt;</span><br><span class="line">				&lt;a href=&quot;#tab1&quot;&gt;tab1&lt;/a&gt;</span><br><span class="line">				&lt;a href=&quot;#tab2&quot;&gt;tab2&lt;/a&gt;</span><br><span class="line">				&lt;a href=&quot;#tab3&quot;&gt;tab3&lt;/a&gt;</span><br><span class="line">			&lt;/span&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li id=&quot;tab1&quot;&gt;tab content1&lt;/li&gt;</span><br><span class="line">				&lt;li id=&quot;tab2&quot;&gt;tab content2&lt;/li&gt;</span><br><span class="line">				&lt;li id=&quot;tab3&quot;&gt;tab content3&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">&lt;!-- 		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt;</span><br><span class="line">		&lt;h1&gt;title&lt;/h1&gt; --&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/2019/04/27/纯css实现选项卡/target.gif" alt="href+target实现"></p>
-<h5 id="利用-js"><a href="#利用-js" class="headerlink" title="利用 js"></a>利用 js</h5><p>直观上想，可以直接利用 js <code>onmouseover</code> <code>onclick</code> 等实现，不过这就不属于纯 css 实现的范畴了</p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          选项卡是个很常见的小组件，总结一下想到的知识点和方法
+这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等
+
+布局
+
+float 肯定是可以实现的，absolute+float:left+li，将列表横向布局实现。
+如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空div
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/27/纯css实现选项卡/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2019/04/17/移动端适配/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/04/17/移动端适配/" class="post-title-link" itemprop="url">移动端适配</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/17/移动端适配/" itemprop="url">移动端适配</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
               
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-17T18:51:16+08:00">
+                2019-04-17
+              </time>
+            
 
-              <time title="Created: 2019-04-17 18:51:16 / Modified: 18:56:22" itemprop="dateCreated datePublished" datetime="2019-04-17T18:51:16+08:00">2019-04-17</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/FE/" itemprop="url" rel="index">
                     <span itemprop="name">FE</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/17/移动端适配/" class="leancloud_visitors" data-flag-title="移动端适配">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -889,88 +1237,159 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="移动端适配"><a href="#移动端适配" class="headerlink" title="移动端适配"></a>移动端适配</h2><h5 id="1-利用百分比实现宽高比固定"><a href="#1-利用百分比实现宽高比固定" class="headerlink" title="1. 利用百分比实现宽高比固定"></a>1. 利用百分比实现宽高比固定</h5><p>想实现宽度自适应，高度随宽度变化而变化，宽高比固定。<br>用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。</p>
-<p>所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，以实现固定宽高比。</p>
-<p>还可以利用vw，vh设置</p>
-<h5 id="2-rem"><a href="#2-rem" class="headerlink" title="2. rem"></a>2. rem</h5><p>以<html>元素字体为基准的单位：默认font-size为16px的话，1rem=16px。<br>可以根据 .clientWidth 读取屏幕宽度，并计算对应的尺寸。</html></p>
-<h5 id="3-怎样适应视网膜分辨率？"><a href="#3-怎样适应视网膜分辨率？" class="headerlink" title="3. 怎样适应视网膜分辨率？"></a>3. 怎样适应视网膜分辨率？</h5><p><img src="http://www.w3cplus.com/sites/default/files/blogs/201212/retina-web-10.jpg" alt="怎样适应视网膜分辨率"></p>
-<h5 id="4-dpr-和-viewport"><a href="#4-dpr-和-viewport" class="headerlink" title="4. dpr 和 viewport"></a>4. dpr 和 viewport</h5><p>dpr(device pixel ratio)设备像素比<br>viewport 移动端有三:</p>
-<ul>
-<li>ideal viewport 理想大小，通常设为设备屏宽高</li>
-<li>visual viewport 可视大小，整个page在屏幕中显示的大小, 不会超过layout</li>
-<li>layout viewport 布局大小，page页面的大小</li>
-</ul>
-<p>通常页面不会完全显示，因此 visual viewport &lt;= layout viewport,</p>
-<h5 id="5-关于flexible方案"><a href="#5-关于flexible方案" class="headerlink" title="5. 关于flexible方案"></a>5. 关于flexible方案</h5><ul>
-<li>如果 <meta> 标签中设定了viewport，则取值已设定的 初始dpr 和 ideal viewport 的宽度大小（通常=device-width设备宽度）</li>
-<li>若没有<meta>, 根据设备设置 dpr 和 缩放倍数（1/dpr）,压缩css像素，保证同等物理大小的范围里，css像素和物理像素比为1.</li>
-<li>添加<meta>属性及标签</li>
-<li>监听页面变化</li>
-<li>更新根元素字体大小：这里如果页面宽度低于540px,那么页面中html的font-size也会按照（当前页面宽度/640）的比例变化</li>
-</ul>
-<p>initial-dpr 的作用方式是：同时设置 visual viewport 和 layout viewport，如果width属性也有设定，则取二者较大值</p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          移动端适配1. 利用百分比实现宽高比固定想实现宽度自适应，高度随宽度变化而变化，宽高比固定。用height百分比显然不行，height百分比是以父元素高度为基准的，而此时需要以宽度为基准来设置高度。
+所以这里可以用到padding-top或者padding-bottom，padding是以父元素的width为基准的。我们可以设置元素的height：0，然后用padding-bottom将元素撑开，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/17/移动端适配/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2018/11/08/关于-怪诞行为学-的一些想法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/11/08/关于-怪诞行为学-的一些想法/" class="post-title-link" itemprop="url">关于 怪诞行为学 的一些想法</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/08/关于-怪诞行为学-的一些想法/" itemprop="url">关于 怪诞行为学 的一些想法</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
               
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-08T16:56:56+08:00">
+                2018-11-08
+              </time>
+            
 
-              <time title="Created: 2018-11-08 16:56:56 / Modified: 17:22:10" itemprop="dateCreated datePublished" datetime="2018-11-08T16:56:56+08:00">2018-11-08</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
                     <span itemprop="name">读书笔记</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/11/08/关于-怪诞行为学-的一些想法/" class="leancloud_visitors" data-flag-title="关于 怪诞行为学 的一些想法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -978,78 +1397,160 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="2018-11-08-update"><a href="#2018-11-08-update" class="headerlink" title="2018.11.08 update"></a>2018.11.08 update</h2><p>9月份在实验室书架上发现了这本《怪诞行为学》，我自己是对心理学有毫无来由的喜爱，对不正常事件也充满了好奇，估计挺适合找bug的。一开始每天去书架那里看，后来情到深处就拿到自己那里看了，打算看完在放回去。</p>
-<p>Dan Ariley 这本书2010年出版的，到现在都快10年了。不过其中的实验和例子非常有趣不乏味。</p>
-<p>首先Dan描述了一场飞来横祸使其对行为经济学的兴趣大增的例子。Dan经历过一场镁光灯爆炸，全身70%的皮肤遭受三度烧伤。之后他引出了一个exceptional的问题：怎么撕绷带/膏药/创可贴一类的东西？</p>
-<p>Dan恢复时每天要浸在消毒液里(?这里我很疑惑啊，想到了木乃伊)，刮掉坏死的皮肤，再包扎起来。每次换药都会牵扯到尚未完全愈合的伤口，必然非常疼痛。可以设想一下撕一块贴在身上一天的狗皮膏药。他的护士选择：<a><em>快速用力扯，刷的一下。</em></a>这实在太疼了，尤其对如同木乃伊一般烧伤患者。经过多次痛苦的实践，Dan觉得是时候和医生建议：<a><em>低疼痛的密度的慢速撕扯</em></a> 要比刷的一下更能使患者接受。不过他忘记考虑了动作发出者的心里，即<a><em>病人痛苦的表现给护士本人带来的心理折磨</em></a>，也是导致护士选择速战速决的原因之一。</p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          2018.11.08 update9月份在实验室书架上发现了这本《怪诞行为学》，我自己是对心理学有毫无来由的喜爱，对不正常事件也充满了好奇，估计挺适合找bug的。一开始每天去书架那里看，后来情到深处就拿到自己那里看了，打算看完在放回去。
+Dan Ariley 这本书2010年出版的，到现在都快10年了。不过其中的实验和例子非常有趣不乏味。
+首先Dan描述了一场飞来横祸使其对行为经济学的兴趣大增的例
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/08/关于-怪诞行为学-的一些想法/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2018/09/28/优先队列/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/09/28/优先队列/" class="post-title-link" itemprop="url">优先队列</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/28/优先队列/" itemprop="url">优先队列</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-28T15:02:05+08:00">
+                2018-09-28
+              </time>
+            
 
-              <time title="Created: 2018-09-28 15:02:05" itemprop="dateCreated datePublished" datetime="2018-09-28T15:02:05+08:00">2018-09-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2018-10-09 15:15:41" itemprop="dateModified" datetime="2018-10-09T15:15:41+08:00">2018-10-09</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/普林斯顿算法/" itemprop="url" rel="index">
                     <span itemprop="name">普林斯顿算法</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/28/优先队列/" class="leancloud_visitors" data-flag-title="优先队列">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1057,91 +1558,168 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文参考<a href="https://github.com/keyvanakbary/princeton-algorithms/blob/master/week-4-8-puzzle" target="_blank" rel="noopener">keyvanakbary</a>,<a href="https://blog.csdn.net/wr339988/article/details/55813202" target="_blank" rel="noopener">ForeseeMark</a>,<a href="https://blog.csdn.net/zerodshei/article/details/54346425" target="_blank" rel="noopener">zerods-seu</a>的成果</p>
-<hr>
-<ol>
-<li>8 puzzle</li>
-<li>Dynamic Median</li>
-<li>RandomizedPQ</li>
-<li>Taxicab</li>
-</ol>
-<hr>
-<h2 id="1、8-puzzle"><a href="#1、8-puzzle" class="headerlink" title="1、8 puzzle"></a>1、8 puzzle</h2><p>类似于华容道，<a>A*算法</a>的应用,对于Dijstra来说省略无用的路径，更加高效。</p>
-<p>由两个类构成 Board() &amp; Soler()， 相当于以版做单位， 移动之后的状态作为新的Board，存储于优先队列中。</p>
-<p><img src="/2018/09/28/优先队列/1.png" alt="1"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** Week 4 - 8 puzzle</span></span><br><span class="line"><span class="comment"> * Reference: keyvanakbary</span></span><br><span class="line"><span class="comment"> * Url: https://github.com/keyvanakbary/princeton-algorithms/blob/master/week-4-8-puzzle</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Board</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span>[][] blocks;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Board</span><span class="params">(<span class="keyword">int</span>[][] blocks)</span> </span>&#123; <span class="comment">//immutable data type</span></span><br><span class="line">        <span class="keyword">this</span>.blocks = copy(blocks);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[][] copy(<span class="keyword">int</span>[][] blocks) &#123;</span><br><span class="line">        <span class="keyword">int</span>[][] copy = <span class="keyword">new</span> <span class="keyword">int</span>[blocks.length][blocks.length];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; blocks.length; row++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; blocks.length; col++)</span><br><span class="line">                copy[row][col] = blocks[row][col];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">dimension</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> blocks.length;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Number of blocks out of place</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> count</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hamming</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; dimension(); row++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; dimension(); col++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] == <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] != row * dimension() + col + <span class="number">1</span>)</span><br><span class="line">                    count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * sum of Manhattan distances between blocks and goal</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> sum</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">manhattan</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> r, c;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; dimension(); row++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; dimension(); col++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] == <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                r = (blocks[row][col] - <span class="number">1</span>) / dimension();</span><br><span class="line">                c = (blocks[row][col] - <span class="number">1</span>) % dimension();</span><br><span class="line">                sum += (Math.abs(row - r) + Math.abs(col - c));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isGoal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; dimension(); row++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; dimension(); col++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] == <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] != row * dimension() + col + <span class="number">1</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Judging whether a Board is solvable with a twin Board</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> twin Board</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Board <span class="title">twin</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] copy = copy(blocks);</span><br><span class="line">        <span class="keyword">int</span> rr = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (blocks[rr][<span class="number">0</span>] * blocks[rr][<span class="number">1</span>] == <span class="number">0</span>) rr = <span class="number">1</span>;</span><br><span class="line">        copy[rr][<span class="number">0</span>] = blocks[rr][<span class="number">1</span>];</span><br><span class="line">        copy[rr][<span class="number">1</span>] = blocks[rr][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Board(copy);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object that)</span> </span>&#123; <span class="comment">// instanceof 指出对象是否是特定类的一个实例</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span> == that) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (that == <span class="keyword">null</span> || !(that <span class="keyword">instanceof</span> Board)</span><br><span class="line">                || ((Board) that).blocks.length != blocks.length) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; dimension(); row++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; dimension(); col++)</span><br><span class="line">                <span class="keyword">if</span> (((Board) that).blocks[row][col] != blocks[row][col]) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Add the available neighbors to the priority queue</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> an Iterable LinkedList&lt;Board&gt;</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Iterable&lt;Board&gt; <span class="title">neighbors</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        LinkedList&lt;Board&gt; neighbors = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> sR= SpaceLocation()[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> sC = SpaceLocation()[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (sR &gt; <span class="number">0</span>) neighbors.add(<span class="keyword">new</span> Board(swap(sR, sC, sR - <span class="number">1</span>, sC)));</span><br><span class="line">        <span class="keyword">if</span> (sR &lt; dimension() - <span class="number">1</span>) neighbors.add(<span class="keyword">new</span> Board(swap(sR, sC, sR + <span class="number">1</span>, sC)));</span><br><span class="line">        <span class="keyword">if</span> (sC &gt; <span class="number">0</span>) neighbors.add(<span class="keyword">new</span> Board(swap(sR, sC, sR, sC - <span class="number">1</span>)));</span><br><span class="line">        <span class="keyword">if</span> (sC &lt; dimension() - <span class="number">1</span>) neighbors.add(<span class="keyword">new</span> Board(swap(sR, sC, sR, sC + <span class="number">1</span>)));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> neighbors;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Swap two blocks</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> r1 row of block1</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> c1 col of block1</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> r2 row of block2</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> c2 col of block2</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the swapped array</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[][] swap(<span class="keyword">int</span> r1, <span class="keyword">int</span> c1, <span class="keyword">int</span> r2, <span class="keyword">int</span> c2) &#123;</span><br><span class="line">        <span class="keyword">int</span>[][] sblocks = copy(blocks);</span><br><span class="line">        <span class="keyword">int</span> tmp = sblocks[r1][c1];</span><br><span class="line">        sblocks[r1][c1] = sblocks[r2][c2];</span><br><span class="line">        sblocks[r2][c2] = tmp;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> sblocks;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> an array with the location of Space</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] SpaceLocation() &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span>[] SL = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; dimension(); row++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; dimension(); col++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (blocks[row][col] == <span class="number">0</span>) &#123;</span><br><span class="line">                    SL[<span class="number">0</span>] = row;</span><br><span class="line">                    SL[<span class="number">1</span>] = col;</span><br><span class="line">                    flag = <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (flag != <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> SL;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        StringBuilder s = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        s.append(dimension() + <span class="string">"\n"</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; dimension(); i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; dimension(); j++) &#123;</span><br><span class="line">                s.append(String.format(<span class="string">"%2d "</span>, blocks[i][j]));</span><br><span class="line">            &#125;</span><br><span class="line">            s.append(<span class="string">"\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2、Dynamic-Medianjjjoo"><a href="#2、Dynamic-Medianjjjoo" class="headerlink" title="2、Dynamic Medianjjjoo,"></a>2、Dynamic Medianjjjoo,</h2><p>找到一组数的中位数</p>
-<p>（1）增加一个元素，时间O(log(n))时间</p>
-<p>（2）返回当前元素集合的中位数，O(n)时间。</p>
-<p>（3）删除中位数，log(n)时间。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> edu.princeton.cs.algs4.MaxPQ;</span><br><span class="line"><span class="keyword">import</span> edu.princeton.cs.algs4.MinPQ;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** ********************************************************************************</span></span><br><span class="line"><span class="comment"> * Week4: Interview Questions: Priority Queues</span></span><br><span class="line"><span class="comment"> *  Dynamic Median</span></span><br><span class="line"><span class="comment"> *  使用两个堆维护中位数，这里临界条件"="在MaxPQ上</span></span><br><span class="line"><span class="comment"> *  judge() 存在边界bug</span></span><br><span class="line"><span class="comment"> *  Reference：1 ForeseeMark https://blog.csdn.net/wr339988/article/details/55813202</span></span><br><span class="line"><span class="comment"> *             2 zerods-seu  https://blog.csdn.net/zerodshei/article/details/54346425</span></span><br><span class="line"><span class="comment"> ***********************************************************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DynamicMedian</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> MinPQ minPQ = <span class="keyword">new</span> MinPQ();</span><br><span class="line">    <span class="keyword">private</span> MaxPQ maxPQ = <span class="keyword">new</span> MaxPQ();</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DynamicMedian</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num == <span class="number">0</span>) &#123;</span><br><span class="line">            minPQ.insert(n);</span><br><span class="line">            num++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (num == <span class="number">1</span>) &#123;</span><br><span class="line">            maxPQ.insert(n);</span><br><span class="line">            num++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (n &lt;= (<span class="keyword">int</span>) maxPQ.max()) maxPQ.insert(n);</span><br><span class="line">        <span class="keyword">else</span> minPQ.insert(n);</span><br><span class="line"></span><br><span class="line">        judge();</span><br><span class="line">        num++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nums</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delMid</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        judge();</span><br><span class="line">        maxPQ.delMax();</span><br><span class="line">        num--;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** ****************************************************************************</span></span><br><span class="line"><span class="comment">     * 2018-09-30</span></span><br><span class="line"><span class="comment">     * 判断: 若两个堆的元素个数&gt;1, 则将大堆的顶部元素放入小堆中重排</span></span><br><span class="line"><span class="comment">     * 【2】中直接以大堆的顶部元素作为中位数，可能会出现边界情况：[2,3,1]</span></span><br><span class="line"><span class="comment">     *  delMid() 返回 3 ------- BUG</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *      minPQ   maxPQ</span></span><br><span class="line"><span class="comment">     *        2       3</span></span><br><span class="line"><span class="comment">     *              1</span></span><br><span class="line"><span class="comment">     * 2018-10-09 update</span></span><br><span class="line"><span class="comment">     * +立flag 解决边界调节的bug</span></span><br><span class="line"><span class="comment">     *******************************************************************************/</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">judge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num == <span class="number">0</span>) <span class="keyword">throw</span> <span class="keyword">new</span> NullPointerException();</span><br><span class="line">        <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span> subVal = maxPQ.size() - minPQ.size();</span><br><span class="line">        <span class="keyword">while</span> (Math.abs(subVal) &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (subVal == <span class="number">1</span> &amp;&amp; flag) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span> (subVal &lt; -<span class="number">1</span>) maxPQ.insert(minPQ.delMin());</span><br><span class="line">            <span class="keyword">if</span> (subVal == -<span class="number">1</span>) &#123;</span><br><span class="line">                maxPQ.insert(minPQ.delMin());</span><br><span class="line">                flag = <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (subVal &gt; <span class="number">1</span>) minPQ.insert(maxPQ.delMax());</span><br><span class="line">            subVal = maxPQ.size() - minPQ.size();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">queryMid</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>) maxPQ.max();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        DynamicMedian dm = <span class="keyword">new</span> DynamicMedian();</span><br><span class="line">        dm.insert(<span class="number">4</span>);</span><br><span class="line">        dm.insert(<span class="number">3</span>);</span><br><span class="line">        dm.insert(<span class="number">5</span>);</span><br><span class="line">        System.out.println(dm.queryMid());</span><br><span class="line">        dm.delMid();</span><br><span class="line">        dm.insert(<span class="number">10</span>);</span><br><span class="line">        dm.insert(<span class="number">2</span>);</span><br><span class="line">        System.out.println(dm.queryMid());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="3、RandomizedPQ"><a href="#3、RandomizedPQ" class="headerlink" title="3、RandomizedPQ"></a>3、RandomizedPQ</h2><p>具体和课程中给出的优先队列并无二致，加入delRandom()随机删除一个元素，和删除堆顶元素类似</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Key <span class="title">delRandom</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isEmpty()) <span class="keyword">throw</span> <span class="keyword">new</span> NoSuchElementException(<span class="string">"Priority queue underflow"</span>);</span><br><span class="line">    <span class="keyword">int</span> rdNum = StdRandom.uniform(<span class="number">1</span>,n);</span><br><span class="line">    Key rd = pq[rdNum];</span><br><span class="line">    exch(rdNum, n--);</span><br><span class="line">    sink(rdNum);</span><br><span class="line">    pq[n+<span class="number">1</span>] = <span class="keyword">null</span>;     <span class="comment">// to avoid loiterig and help with garbage collection</span></span><br><span class="line">    <span class="keyword">if</span> ((n &gt; <span class="number">0</span>) &amp;&amp; (n == (pq.length - <span class="number">1</span>) / <span class="number">4</span>)) resize(pq.length / <span class="number">2</span>);</span><br><span class="line">    <span class="function"><span class="keyword">assert</span> <span class="title">isMinHeap</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="keyword">return</span> rd;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="4、Taxicab"><a href="#4、Taxicab" class="headerlink" title="4、Taxicab"></a>4、Taxicab</h2><p>Taxicab numbers. A taxicab number is an integer that can be expressed as the sum of two cubes of integers in two different ways: a3+b3=c3+d3. For example, 1729=93+103=13+123. Design an algorithm to find all taxicab numbers with a, b, c, and d less than n.<br>Version 1: Use time proportional to n2logn and space proportional to n2.<br>Version 2: Use time proportional to n2logn and space proportional to n.</p>
-<p><a href="https://blog.csdn.net/zerodshei/article/details/54346425?utm_source=copy" target="_blank" rel="noopener">zerods-seu</a>的文章中写到：先计算出所有小于n1/3 +1的整数的3次方，放在数组cube[]里面，然后循环，从余下项目中二分法查找(obj-num2), 如果找到了count++，最后如果count等于2, 那么既满足要求。复杂度是$n4/3logn的，空间复杂度是n1/3+1。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> edu.princeton.cs.algs4.StdOut;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Taxicab</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> cbrt = (<span class="keyword">int</span>) Math.cbrt(a);   <span class="comment">// 小于等于该数字的立方根</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= cbrt; i++) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> diff = a - (i * i * i);</span><br><span class="line">            <span class="keyword">int</span> a1 = (<span class="keyword">int</span>) Math.cbrt(diff);</span><br><span class="line">            <span class="keyword">if</span> (a1 == Math.cbrt(diff)) count++;</span><br><span class="line">            <span class="keyword">if</span> (count &gt; <span class="number">2</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] Numb(<span class="keyword">int</span> a) &#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];</span><br><span class="line">        <span class="keyword">int</span> cbrt = (<span class="keyword">int</span>) Math.cbrt(a);   <span class="comment">// 小于等于该数字的立方根</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= cbrt; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> diff = a - (i * i * i);</span><br><span class="line">            <span class="keyword">int</span> a1 = (<span class="keyword">int</span>) Math.cbrt(diff);</span><br><span class="line">            <span class="keyword">if</span> (a1 == Math.cbrt(diff)) &#123;</span><br><span class="line">                count++;</span><br><span class="line">                <span class="keyword">if</span> (count == <span class="number">1</span>) &#123;</span><br><span class="line">                    nums[<span class="number">0</span>] = i;</span><br><span class="line">                    nums[<span class="number">1</span>] = a1;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (count == <span class="number">2</span>) &#123;</span><br><span class="line">                    nums[<span class="number">2</span>] = i;</span><br><span class="line">                    nums[<span class="number">3</span>] = a1;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (count &gt; <span class="number">2</span>) <span class="keyword">return</span> nums;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        Taxicab tc = <span class="keyword">new</span> Taxicab();</span><br><span class="line">        Scanner scan = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> n = scan.nextInt();</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>, k = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; n) &#123;</span><br><span class="line">            <span class="keyword">if</span> (tc.find(k)) &#123;</span><br><span class="line">                i++;</span><br><span class="line">                System.out.println(i + <span class="string">" th ramanujan number is "</span> + k);</span><br><span class="line">                System.out.println(tc.Numb(k)[<span class="number">0</span>] + <span class="string">" "</span> + tc.Numb(k)[<span class="number">1</span>]</span><br><span class="line">                        + <span class="string">" &amp; "</span> + tc.Numb(k)[<span class="number">2</span>] + <span class="string">" "</span> + tc.Numb(k)[<span class="number">3</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">            k++;</span><br><span class="line">        &#125;</span><br><span class="line">        scan.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          本文参考keyvanakbary,ForeseeMark,zerods-seu的成果
+
+
+8 puzzle
+Dynamic Median
+RandomizedPQ
+Taxicab
+
+
+1、8 puzzle类似于华容道，A*算法的应用,对于Dijstra来说省略无用的路径，更加高效。
+由两个类构成 Board() &amp; Soler()， 相当于以版做单位， 移动之后的状态作为新的Board，存
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/28/优先队列/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/" class="post-title-link" itemprop="url">Capacity of 3D Scale Free Wireless Network</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/" itemprop="url">Capacity of 3D Scale Free Wireless Network</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
               
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-10T16:02:04+08:00">
+                2018-09-10
+              </time>
+            
 
-              <time title="Created: 2018-09-10 16:02:04 / Modified: 16:36:00" itemprop="dateCreated datePublished" datetime="2018-09-10T16:02:04+08:00">2018-09-10</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/小硕/" itemprop="url" rel="index">
                     <span itemprop="name">小硕</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/" class="leancloud_visitors" data-flag-title="Capacity of 3D Scale Free Wireless Network">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1149,70 +1727,160 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>还记得大四做毕设的时候，看完了20多篇文献。想着这个二维的栅格模型扩展到三维难道不是很容易吗。一个呆在寝室的下午，坐在桌前，面对着一个魔方，想了一会之后豁然开朗。就有了这个 <strong>veeery tiny</strong> 的小idea。Poster版面也是亲手设计的，这个小文章真的算是亲儿子了。</p>
-<p><img src="/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/wzy-poster.png" alt="1"></p>
+      
 
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
         
+          
+          还记得大四做毕设的时候，看完了20多篇文献。想着这个二维的栅格模型扩展到三维难道不是很容易吗。一个呆在寝室的下午，坐在桌前，面对着一个魔方，想了一会之后豁然开朗。就有了这个 veeery tiny 的小idea。Poster版面也是亲手设计的，这个小文章真的算是亲儿子了。
+
+
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/10/Capacity-of-3D-Scale-Free-Wireless-Network/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block home" lang="default">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://KathyW666.github.io/2018/07/26/Counting inversions（逆序对计数问题）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kathy.jpg">
       <meta itemprop="name" content="Kathy Wang">
       <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/kathy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Kathy's Blog">
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/07/26/Counting inversions（逆序对计数问题）/" class="post-title-link" itemprop="url">Counting inversions（逆序对计数问题）</a>
-        </h1>
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/26/Counting inversions（逆序对计数问题）/" itemprop="url">Counting inversions（逆序对计数问题）</a></h2>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
               
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-26T16:05:31+08:00">
+                2018-07-26
+              </time>
+            
 
-              <time title="Created: 2018-07-26 16:05:31 / Modified: 16:25:04" itemprop="dateCreated datePublished" datetime="2018-07-26T16:05:31+08:00">2018-07-26</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/普林斯顿算法/" itemprop="url" rel="index">
                     <span itemprop="name">普林斯顿算法</span>
                   </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/26/Counting inversions（逆序对计数问题）/" class="leancloud_visitors" data-flag-title="Counting inversions（逆序对计数问题）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1220,33 +1888,63 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文参考<a href="https://blog.csdn.net/huanghanqian/article/details/78825215" target="_blank" rel="noopener">淡然坊</a>,<a href="https://www.cnblogs.com/evasean/p/7230996.html" target="_blank" rel="noopener">evasean</a>的blog</p>
-<hr>
-<p>首先想到的是，在插入排序中<strong>逆序对</strong>的个数就是元素交换的次数。这种特性存在于稳定的排序算法中（归并，冒泡，插入），非稳定的（选择）不适用。</p>
-<p>归并中的计算，逆序对的数量由3个部分组成：逆序对数量=左半部分的逆序对数量+右半部分的逆序对数量+合并部分的逆序对数量。</p>
-<p><img src="/2018/07/26/Counting inversions（逆序对计数问题）/1.png" alt="1"></p>
-<p>令i作为左半数组的遍历索引，j作为右半数组的遍历索引。在合并的任何时刻，一旦发现a[i] 比 a[j] 大，那么会有 (mid – i + 1) 个逆序对。因为a[i+1], a[i+2] … a[mid-1] 都比a[j] 大。</p>
-<p>那么最后在merge中加入相应的计数即可。</p>
+      
 
       
+        
+          
+          本文参考淡然坊,evasean的blog
+
+首先想到的是，在插入排序中逆序对的个数就是元素交换的次数。这种特性存在于稳定的排序算法中（归并，冒泡，插入），非稳定的（选择）不适用。
+归并中的计算，逆序对的数量由3个部分组成：逆序对数量=左半部分的逆序对数量+右半部分的逆序对数量+合并部分的逆序对数量。
+
+令i作为左半数组的遍历索引，j作为右半数组的遍历索引。在合并的任何时刻，一旦发现a[i] 比 a
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/26/Counting inversions（逆序对计数问题）/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1254,129 +1952,171 @@
           </div>
           
 
+
+          
+
         </div>
+        
           
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
+      
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
+      
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Kathy Wang" src="/images/kathy.jpg">
-  <p class="site-author-name" itemprop="name">Kathy Wang</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">12</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/kathy.jpg" alt="Kathy Wang">
+            
+              <p class="site-author-name" itemprop="name">Kathy Wang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+
           
-        <span class="site-state-item-count">14</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://instagram.com/kathywang7236" title="Instagram &rarr; https://instagram.com/kathywang7236" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://blog.csdn.net/weixin_38206454" title="csdn &rarr; https://blog.csdn.net/weixin_38206454" rel="noopener" target="_blank"><i class="fa fa-fw fa-laptop"></i>csdn</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://www.jianshu.com/u/4ae92729eb78" title="简书 &rarr; https://www.jianshu.com/u/4ae92729eb78" rel="noopener" target="_blank"><i class="fa fa-fw fa-address-book"></i>简书</a>
-      </span>
-  </div>
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yourname" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/kathywang7236" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/weixin_38206454" target="_blank" title="csdn">
+                      
+                        <i class="fa fa-fw fa-laptop"></i>csdn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/4ae92729eb78" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>简书</a>
+                  </span>
+                
+            </div>
+          
 
+          
+          
 
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title">
-      <i class="fa fa-fw fa-link"></i>
-      Links
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://liam0205.me/ ||" title="https://liam0205.me/ ||" rel="noopener" target="_blank">Liam Huang</a>
-        </li>
-    </ul>
-  </div>
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://liam0205.me/ ||" title="Liam Huang" target="_blank">Liam Huang</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
-      </div>
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
 
 
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Kathy Wang</span>
+
+  
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0
-  </div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
-  </div>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
 
         
-
-
-
-
-
 
 
 
@@ -1387,15 +2127,130 @@
         
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
 
 
 
@@ -1412,9 +2267,446 @@
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("Q2klUibQyJkeFFHHcifryavG-gzGzoHsz", "NV28N32qvdEreUgJcLOYfya4");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
 
   
 
