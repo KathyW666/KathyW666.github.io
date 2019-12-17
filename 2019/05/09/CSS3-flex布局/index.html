@@ -86,21 +86,21 @@
 
 
 
-<meta name="description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
+<meta name="description" content="在移动端适配，移动端开发中，或 APP 组件，页面栏目 or 小范围板块布局中常用的 flex 布局。">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3 flex布局">
 <meta property="og:url" content="http://KathyW666.github.io/2019/05/09/CSS3-flex布局/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
-<meta property="og:description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
+<meta property="og:description" content="在移动端适配，移动端开发中，或 APP 组件，页面栏目 or 小范围板块布局中常用的 flex 布局。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/1077208/201707/1077208-20170715083110384-1725116546.png">
 <meta property="og:image" content="http://kathyw666.github.io/2019/05/09/CSS3-flex布局/dice.png">
-<meta property="og:updated_time" content="2019-05-12T16:03:30.494Z">
+<meta property="og:updated_time" content="2019-12-17T04:38:32.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3 flex布局">
-<meta name="twitter:description" content="flex 布局是什么？自适应弹性布局  自动判断布局空间，修改自身尺寸 多个 box 在多个方向进行对齐&amp;amp;分布  什么时候用？适用于什么场景？ 布局内部需要自适应 布局内部需要多个方向排列对齐  应用于：  移动端适配，移动端开发 APP 组件，页面栏目 or 小范围板块布局  基础概念 布局结构 双层结构：外层容器flex-container,激活弹性机制。内层flex-item自动获得">
+<meta name="twitter:description" content="在移动端适配，移动端开发中，或 APP 组件，页面栏目 or 小范围板块布局中常用的 flex 布局。">
 <meta name="twitter:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png">
 
 
@@ -413,7 +413,9 @@
       
 
       
-        <h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h4 id="是什么？"><a href="#是什么？" class="headerlink" title="是什么？"></a>是什么？</h4><p>自适应弹性布局</p>
+        <p>在移动端适配，移动端开发中，或 APP 组件，页面栏目 or 小范围板块布局中常用的 <strong>flex</strong> 布局。</p>
+<a id="more"></a>
+<h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h4 id="是什么？"><a href="#是什么？" class="headerlink" title="是什么？"></a>是什么？</h4><p>自适应弹性布局</p>
 <ul>
 <li>自动判断布局空间，修改自身尺寸</li>
 <li>多个 box 在多个方向进行对齐&amp;分布</li>
@@ -433,8 +435,8 @@
 </li>
 <li><p>flex 机制</p>
 <p>任何一个容器都可以指定为 flex 布局，其内部第一层级的子项自动变为 flex 项目</p>
-<pre><code>`display:flex` 块状flex容器
-`display:inline-flex`行间flex容器
+<pre><code> `display:flex` 块状flex容器
+ `display:inline-flex`行间flex容器
 </code></pre><p><strong>一旦激活 flex 机制，子项的<font color="darkpink"><code>float</code></font>、<font color="darkpink"><code>clear</code></font> 和 <font color="darkpink"><code>vertical-align</code></font> 属性失效</strong></p>
 </li>
 <li><p>区域轴向</p>
@@ -444,9 +446,19 @@
 </ul>
 <h4 id="flex-属性"><a href="#flex-属性" class="headerlink" title="flex 属性"></a>flex 属性</h4><p><code>flex-container</code>6 个属性，<code>flex-item</code>6 个属性</p>
 <ul>
-<li><p>外围容器相关属性：对子项的排列和对齐 - <code>flex-direction</code>：定义主轴和交叉轴的方向，文档流入盒子的方向 - <code>flex-wrap</code>：换行 <code>nowrap</code>：往往对应自适应，外围容器固定，item 自动变化 - <code>flex-flow</code>：文档流 <code>flex-direction</code> + <code>flex-wrap</code> 缩写 - <code>justify-content</code>：主轴对齐（左中右，留白环绕，留白中间） - <code>align-items</code>：交叉轴对齐 - <code>align-content</code>：交叉轴多行的对齐方式（容器若只有一行，则无效，避免与<code>align-items</code>发生冲突）</p>
-<p>那么问题来了：水平垂直居中的一个方式，就可以用<font color="darkpink"><strong><code>flex布局</code></strong></font>实现</p>
+<li><p>外围容器相关属性：1）对子项的排列和对齐 2）文档流入盒子的方向</p>
+<ul>
+<li><code>flex-direction</code>：定义主轴和交叉轴的方向</li>
+<li><code>flex-wrap</code>：换行 <code>nowrap</code>：往往对应自适应，外围容器固定，item 自动变化</li>
+<li><code>flex-flow</code>：文档流 <code>flex-direction</code> + <code>flex-wrap</code> 缩写</li>
+<li><code>justify-content</code>：主轴对齐（左中右，留白环绕，留白中间）</li>
+<li><code>align-items</code>：交叉轴对齐</li>
+<li><code>align-content</code>：交叉轴多行的对齐方式（容器若只有一行，则无效，避免与<code>align-items</code>发生冲突）</li>
+</ul>
 </li>
+</ul>
+<p>那么问题来了：水平垂直居中的一个方式，就可以用<font color="darkpink"><strong><code>flex布局</code></strong></font>实现</p>
+<ul>
 <li><p>子项相关属性：子项的自适应伸缩及分配</p>
 <ul>
 <li><code>flex-grow</code>：扩展比例，分配的是剩余的空间（wrap），默认 0 不扩展</li>
@@ -1414,6 +1426,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

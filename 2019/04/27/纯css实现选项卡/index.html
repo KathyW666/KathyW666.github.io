@@ -86,20 +86,20 @@
 
 
 
-<meta name="description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等  布局  float 肯定是可以实现的，absolute+float:left+li，将列表横向布局实现。 如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空div">
+<meta name="description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等。">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="纯css实现选项卡">
 <meta property="og:url" content="http://KathyW666.github.io/2019/04/27/纯css实现选项卡/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
-<meta property="og:description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等  布局  float 肯定是可以实现的，absolute+float:left+li，将列表横向布局实现。 如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空div">
+<meta property="og:description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://kathyw666.github.io/2019/04/27/纯css实现选项卡/checked.gif">
 <meta property="og:image" content="http://kathyw666.github.io/2019/04/27/纯css实现选项卡/target.gif">
-<meta property="og:updated_time" content="2019-05-09T07:57:33.982Z">
+<meta property="og:updated_time" content="2019-12-17T04:39:29.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯css实现选项卡">
-<meta name="twitter:description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等  布局  float 肯定是可以实现的，absolute+float:left+li，将列表横向布局实现。 如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空div">
+<meta name="twitter:description" content="选项卡是个很常见的小组件，总结一下想到的知识点和方法 这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等。">
 <meta name="twitter:image" content="http://kathyw666.github.io/2019/04/27/纯css实现选项卡/checked.gif">
 
 
@@ -413,6 +413,9 @@
 
       
         <p>选项卡是个很常见的小组件，总结一下想到的知识点和方法</p>
+<p>这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等。</p>
+<a id="more"></a>
+<p>选项卡是个很常见的小组件，总结一下想到的知识点和方法</p>
 <p>这里就拿一般意义上的横向选项卡来说，一般来说会结合点击/鼠标移入实现效果的变化，如下拉菜单，背景变化等</p>
 <ol>
 <li>布局</li>
@@ -421,7 +424,7 @@
 <p>如果用这种方法，免不了要想 浮动 可能引发的问题 - 父级高度塌陷。解决的方法也很容易搜到，“古老”方法可以在结构最后添加一个空<code>div</code>清除浮动；“现代”方法用<code>::after</code>伪元素也分分钟解决，注意要设置伪元素为块级元素<code>block</code>才能出现效果，加上<code>clear:both</code></p>
 <p>接下来可能会引申到两端对齐 还可以用<code>inline-block</code>+<code>text-align: justify</code> 实现两端对齐，不过其默认对最后一行无效，新浏览器可配合<code>text-align-last: justify</code>使用。面对兼容问题一样可以使用添加空<code>div</code>或者伪元素，设置<code>display: inline-block</code>，并设置宽度为 100%</p>
 <p>另外也可以 <code>flex</code> ，操作更加容易一些</p>
-<ol start="2">
+<ol>
 <li>切换</li>
 </ol>
 <h5 id="利用-checked-及相关伪类"><a href="#利用-checked-及相关伪类" class="headerlink" title="利用 checked 及相关伪类"></a>利用 checked 及相关伪类</h5><p>利用<code>input radio</code>的单选特性实现切换，最后清除<code>radio</code>选项的视觉显示</p>
@@ -1359,6 +1362,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

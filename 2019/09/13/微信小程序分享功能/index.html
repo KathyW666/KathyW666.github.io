@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="微信小程序分享功能知识点最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。 概览 概览部分引用自《微信开放文档》  小程序与普通网页开发的区别网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。 在小程序中，渲染和脚本分别运行在不同的线程中。 逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。">
+<meta name="description" content="目前微信内分享常见三种形式，推荐到好物圈，朋友圈分享，微信好友/群分享。 朋友圈分享，目前来看大多用画图来完成。由于微信没有提供直接分享朋友圈的接口，因此各路神通想出了：生成图片保存相册，转发朋友圈，扫图中小程序码的“三段跳”解决方案。这样在海报样式上能做更大的文章。比如插入用户信息，产品的信息，更酷炫的设计等等。">
 <meta name="keywords" content="微信小程序,分享到朋友圈">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信小程序分享功能">
 <meta property="og:url" content="http://KathyW666.github.io/2019/09/13/微信小程序分享功能/index.html">
 <meta property="og:site_name" content="Kathy&#39;s Blog">
-<meta property="og:description" content="微信小程序分享功能知识点最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。 概览 概览部分引用自《微信开放文档》  小程序与普通网页开发的区别网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。 在小程序中，渲染和脚本分别运行在不同的线程中。 逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。">
+<meta property="og:description" content="目前微信内分享常见三种形式，推荐到好物圈，朋友圈分享，微信好友/群分享。 朋友圈分享，目前来看大多用画图来完成。由于微信没有提供直接分享朋友圈的接口，因此各路神通想出了：生成图片保存相册，转发朋友圈，扫图中小程序码的“三段跳”解决方案。这样在海报样式上能做更大的文章。比如插入用户信息，产品的信息，更酷炫的设计等等。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://kathyw666.github.io/2019/09/13/微信小程序分享功能/wx-figure.png">
-<meta property="og:updated_time" content="2019-09-14T13:08:11.382Z">
+<meta property="og:updated_time" content="2019-12-17T04:30:00.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序分享功能">
-<meta name="twitter:description" content="微信小程序分享功能知识点最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。 概览 概览部分引用自《微信开放文档》  小程序与普通网页开发的区别网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。 在小程序中，渲染和脚本分别运行在不同的线程中。 逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。">
+<meta name="twitter:description" content="目前微信内分享常见三种形式，推荐到好物圈，朋友圈分享，微信好友/群分享。 朋友圈分享，目前来看大多用画图来完成。由于微信没有提供直接分享朋友圈的接口，因此各路神通想出了：生成图片保存相册，转发朋友圈，扫图中小程序码的“三段跳”解决方案。这样在海报样式上能做更大的文章。比如插入用户信息，产品的信息，更酷炫的设计等等。">
 <meta name="twitter:image" content="http://kathyw666.github.io/2019/09/13/微信小程序分享功能/wx-figure.png">
 
 
@@ -411,13 +411,19 @@
       
 
       
-        <h1 id="微信小程序分享功能知识点"><a href="#微信小程序分享功能知识点" class="headerlink" title="微信小程序分享功能知识点"></a>微信小程序分享功能知识点</h1><p>最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。</p>
+        <p>目前微信内分享常见三种形式，推荐到好物圈，朋友圈分享，微信好友/群分享。</p>
+<p>朋友圈分享，目前来看大多用画图来完成。由于微信没有提供直接分享朋友圈的接口，因此各路神通想出了：生成图片保存相册，转发朋友圈，扫图中小程序码的“三段跳”解决方案。这样在海报样式上能做更大的文章。比如插入用户信息，产品的信息，更酷炫的设计等等。</p>
+<a id="more"></a>
+<h1 id="微信小程序分享功能知识点"><a href="#微信小程序分享功能知识点" class="headerlink" title="微信小程序分享功能知识点"></a>微信小程序分享功能知识点</h1><p>最近开发微信小程序，记录一些重要的知识点。部分内容引用自微信官方文档。</p>
 <h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><blockquote>
 <p>概览部分引用自《微信开放文档》</p>
 </blockquote>
 <h3 id="小程序与普通网页开发的区别"><a href="#小程序与普通网页开发的区别" class="headerlink" title="小程序与普通网页开发的区别"></a>小程序与普通网页开发的区别</h3><p>网页开发的渲染线程和脚本线程是互斥的，因此长时间运行脚本可能导致页面失去响应。</p>
 <p>在小程序中，渲染和脚本分别运行在不同的线程中。</p>
-<p>逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。这导致一些常用库（jQuery、 Zepto 等），在小程序中是无法运行的。同时 JSCore 的环境同 NodeJS 环境也是不尽相同，所以一些 NPM 的包在小程序中也是无法运行的<a href="[微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#)">^1</a>。</p>
+<p>逻辑层运行在 JSCore 中，并没有一个完整浏览器对象，因而缺少相关的 DOM API 和 BOM API。这导致一些常用库（jQuery、 Zepto 等），在小程序中是无法运行的。同时 JSCore 的环境同 NodeJS 环境也是不尽相同，所以一些 NPM 的包在小程序中也是无法运行的<sup><a href="#fn_1" id="reffn_1">1</a></sup>。</p>
+<blockquote id="fn_1">
+<sup>1</sup>. <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#" target="_blank" rel="noopener">微信开放文档</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
 <h3 id="小程序运行机制"><a href="#小程序运行机制" class="headerlink" title="小程序运行机制"></a>小程序运行机制</h3><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><ul>
 <li>热启动：假如用户已经打开过某小程序，然后在一定时间内再次打开该小程序，此时无需重新启动，只需将后台态的小程序切换到前台，这个过程就是热启动。</li>
 <li>冷启动：用户首次打开或小程序被微信主动销毁后再次打开的情况，此时小程序需要重新加载启动，即冷启动。</li>
@@ -1410,6 +1416,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
